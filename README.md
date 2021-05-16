@@ -1,2 +1,1 @@
 # BorsaApp
-# Alım-Satım Uygulaması
