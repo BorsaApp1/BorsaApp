@@ -10,7 +10,7 @@ namespace BorsaApplication
     {
         public SqlConnection baglanti()
         {
-            SqlConnection baglan = new SqlConnection("Data Source=DESKTOP-EGT3GUN;Initial Catalog=StockMarketData;Integrated Security=True");
+            SqlConnection baglan = new SqlConnection(@"Data Source =.\;Initial Catalog=StockMarketData;Integrated Security=True");
             baglan.Open();
             return baglan;
         }

@@ -14,13 +14,13 @@ namespace BorsaApplication
     public partial class AnaEkran : MetroFramework.Forms.MetroForm
     {
            
-        string userid1;
+        string kullaniciAdi;
         
         public AnaEkran(string userid)
         {
             
             InitializeComponent();
-            userid1 = userid;
+            kullaniciAdi = userid;
         }
         Sqlbaglanti sqlbaglanti = new Sqlbaglanti();
         
@@ -33,7 +33,7 @@ namespace BorsaApplication
         private void AnaEkran_Load(object sender, EventArgs e)
         {
 
-            this.tbl_UserItemsTableAdapter.Fill(this.stockMarketDataDataSet.Tbl_UserItems);
+            this.Show();
            
 
         }
@@ -62,7 +62,7 @@ namespace BorsaApplication
         public void ParaGoster(Label lbl)
         {
             SqlCommand komut = new SqlCommand("Select * From Tbl_Money where UserID=@p1 ", sqlbaglanti.baglanti());
-            komut.Parameters.AddWithValue("@p1", userid1); //Table dan giris yapan kullaniciniyi bulma
+            komut.Parameters.AddWithValue("@p1", kullaniciAdi); //Table dan giris yapan kullaniciniyi bulma
             SqlDataReader dr = komut.ExecuteReader();                 /*Sisteme Giris yapan kullanicinin parasını gösterme*/
             lbl.Text = "0";
             dr.Read();
@@ -78,7 +78,7 @@ namespace BorsaApplication
 
         public void Satis(int ItemID,TextBox txt,DataGridView data)
         {
-            SqlCommand komut = new SqlCommand("Execute Satis " + ItemID + "," + "'" + userid1 + "'" + "," + txt.Text, sqlbaglanti.baglanti());
+            SqlCommand komut = new SqlCommand("Execute Satis " + ItemID + "," + "'" + kullaniciAdi + "'" + "," + txt.Text, sqlbaglanti.baglanti());
             komut.ExecuteNonQuery();                       /*Satıs queryisini calistirip alim islemi gercekletiriyor.*/
             Ekle("Execute ItemGoster " + ItemID, data);    //datagridview i yeniden guncelliyor
             sqlbaglanti.baglanti().Close();
@@ -142,13 +142,13 @@ namespace BorsaApplication
 
         private void btnParaEkle_Click(object sender, EventArgs e)
         {
-            ParaEkle paraekle = new ParaEkle(userid1);
+            ParaEkle paraekle = new ParaEkle(kullaniciAdi);
             paraekle.Show();
         }
 
         private void btnCoinEkle_Click(object sender, EventArgs e)
         {
-            CoinEkle coinekle = new CoinEkle(userid1);
+            CoinEkle coinekle = new CoinEkle(kullaniciAdi);
             coinekle.Show();
         }
         
