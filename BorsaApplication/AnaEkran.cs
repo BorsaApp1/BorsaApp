@@ -151,7 +151,13 @@ namespace BorsaApplication
             CoinEkle coinekle = new CoinEkle(kullaniciAdi);
             coinekle.Show();
         }
-        
+
+        private void btnCuzdan_Click(object sender, EventArgs e)
+        {
+            Cuzdan cuzdan = new Cuzdan();
+            cuzdan.Show();
+        }
+
         private void Anapage_Enter(object sender, EventArgs e)
         {
             ParaGoster(lblPara);

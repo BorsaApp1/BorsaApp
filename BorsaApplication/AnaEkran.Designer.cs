@@ -129,8 +129,9 @@ namespace BorsaApplication
             this.stockMarketDataDataSet = new BorsaApplication.StockMarketDataDataSet();
             this.tblUserItemsBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.tbl_UserItemsTableAdapter = new BorsaApplication.StockMarketDataDataSetTableAdapters.Tbl_UserItemsTableAdapter();
-            this.tblItemsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.stockMarketDataDataSet1 = new BorsaApplication.StockMarketDataDataSet();
+            this.btnCuzdan = new System.Windows.Forms.Button();
+            this.tblItemsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.mtabCoin.SuspendLayout();
             this.BatteryPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -161,8 +162,8 @@ namespace BorsaApplication
             ((System.ComponentModel.ISupportInitialize)(this.tblUserItemsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.stockMarketDataDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblUserItemsBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblItemsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.stockMarketDataDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblItemsBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // mtabCoin
@@ -181,7 +182,7 @@ namespace BorsaApplication
             this.mtabCoin.Location = new System.Drawing.Point(0, 28);
             this.mtabCoin.Multiline = true;
             this.mtabCoin.Name = "mtabCoin";
-            this.mtabCoin.SelectedIndex = 7;
+            this.mtabCoin.SelectedIndex = 8;
             this.mtabCoin.Size = new System.Drawing.Size(989, 534);
             this.mtabCoin.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.mtabCoin.TabIndex = 0;
@@ -1150,6 +1151,7 @@ namespace BorsaApplication
             this.Anapage.BackColor = System.Drawing.Color.BlanchedAlmond;
             this.Anapage.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Anapage.BackgroundImage")));
             this.Anapage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Anapage.Controls.Add(this.btnCuzdan);
             this.Anapage.Controls.Add(this.pictureBox1);
             this.Anapage.Controls.Add(this.lblPara);
             this.Anapage.Controls.Add(this.btnCoinEkle);
@@ -1172,7 +1174,7 @@ namespace BorsaApplication
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(845, 152);
+            this.pictureBox1.Location = new System.Drawing.Point(831, 227);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(31, 38);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1185,7 +1187,7 @@ namespace BorsaApplication
             this.lblPara.BackColor = System.Drawing.Color.Transparent;
             this.lblPara.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblPara.ForeColor = System.Drawing.Color.Gold;
-            this.lblPara.Location = new System.Drawing.Point(754, 161);
+            this.lblPara.Location = new System.Drawing.Point(740, 236);
             this.lblPara.Name = "lblPara";
             this.lblPara.Size = new System.Drawing.Size(85, 29);
             this.lblPara.TabIndex = 4;
@@ -1238,14 +1240,28 @@ namespace BorsaApplication
             // 
             this.tbl_UserItemsTableAdapter.ClearBeforeFill = true;
             // 
-            // tblItemsBindingSource
-            // 
-            this.tblItemsBindingSource.DataMember = "Tbl_Items";
-            // 
             // stockMarketDataDataSet1
             // 
             this.stockMarketDataDataSet1.DataSetName = "StockMarketDataDataSet";
             this.stockMarketDataDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // btnCuzdan
+            // 
+            this.btnCuzdan.BackColor = System.Drawing.Color.Black;
+            this.btnCuzdan.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnCuzdan.Font = new System.Drawing.Font("Elephant", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCuzdan.ForeColor = System.Drawing.Color.Gold;
+            this.btnCuzdan.Location = new System.Drawing.Point(707, 162);
+            this.btnCuzdan.Name = "btnCuzdan";
+            this.btnCuzdan.Size = new System.Drawing.Size(200, 39);
+            this.btnCuzdan.TabIndex = 6;
+            this.btnCuzdan.Text = "CÜZDAN";
+            this.btnCuzdan.UseVisualStyleBackColor = false;
+            this.btnCuzdan.Click += new System.EventHandler(this.btnCuzdan_Click);
+            // 
+            // tblItemsBindingSource
+            // 
+            this.tblItemsBindingSource.DataMember = "Tbl_Items";
             // 
             // AnaEkran
             // 
@@ -1296,8 +1312,8 @@ namespace BorsaApplication
             ((System.ComponentModel.ISupportInitialize)(this.tblUserItemsBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.stockMarketDataDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblUserItemsBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblItemsBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.stockMarketDataDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblItemsBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1404,5 +1420,6 @@ namespace BorsaApplication
         private System.Windows.Forms.TextBox txtMiktarWolf;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Button btnAlımWolf;
+        private System.Windows.Forms.Button btnCuzdan;
     }
 }

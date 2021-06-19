@@ -73,6 +73,12 @@
     <Compile Include="CoinEkle.Designer.cs">
       <DependentUpon>CoinEkle.cs</DependentUpon>
     </Compile>
+    <Compile Include="Cuzdan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cuzdan.Designer.cs">
+      <DependentUpon>Cuzdan.cs</DependentUpon>
+    </Compile>
     <Compile Include="GirisEkran.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -107,6 +113,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CoinEkle.resx">
       <DependentUpon>CoinEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cuzdan.resx">
+      <DependentUpon>Cuzdan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GirisEkran.resx">
       <DependentUpon>GirisEkran.cs</DependentUpon>
