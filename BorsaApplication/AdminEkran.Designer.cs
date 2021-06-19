@@ -31,9 +31,6 @@ namespace BorsaApplication
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             this.grpAdmin = new System.Windows.Forms.GroupBox();
             this.mtabControl = new MetroFramework.Controls.MetroTabControl();
             this.mtabPageUrun = new MetroFramework.Controls.MetroTabPage();
@@ -47,10 +44,10 @@ namespace BorsaApplication
             this.mtabPara = new MetroFramework.Controls.MetroTabPage();
             this.btnParaEkle = new System.Windows.Forms.Button();
             this.dgvParaKontrol = new System.Windows.Forms.DataGridView();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.UserID1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MoneyAmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MoneyAccept = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.grpAdmin.SuspendLayout();
             this.mtabControl.SuspendLayout();
             this.mtabPageUrun.SuspendLayout();
@@ -77,7 +74,7 @@ namespace BorsaApplication
             this.mtabControl.FontSize = MetroFramework.MetroTabControlSize.Tall;
             this.mtabControl.Location = new System.Drawing.Point(6, 32);
             this.mtabControl.Name = "mtabControl";
-            this.mtabControl.SelectedIndex = 0;
+            this.mtabControl.SelectedIndex = 1;
             this.mtabControl.Size = new System.Drawing.Size(1005, 445);
             this.mtabControl.SizeMode = System.Windows.Forms.TabSizeMode.FillToRight;
             this.mtabControl.TabIndex = 29;
@@ -207,13 +204,13 @@ namespace BorsaApplication
             // 
             // dgvParaKontrol
             // 
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft YaHei UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.dgvParaKontrol.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvParaKontrol.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
             this.dgvParaKontrol.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft YaHei UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -237,8 +234,6 @@ namespace BorsaApplication
             // UserID1
             // 
             this.UserID1.DataPropertyName = "UserID";
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft YaHei UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.UserID1.DefaultCellStyle = dataGridViewCellStyle3;
             this.UserID1.HeaderText = "User ID";
             this.UserID1.MinimumWidth = 6;
             this.UserID1.Name = "UserID1";
@@ -248,8 +243,6 @@ namespace BorsaApplication
             // MoneyAmount
             // 
             this.MoneyAmount.DataPropertyName = "MoneyAmount";
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft YaHei UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.MoneyAmount.DefaultCellStyle = dataGridViewCellStyle4;
             this.MoneyAmount.HeaderText = "Money Amount";
             this.MoneyAmount.MinimumWidth = 6;
             this.MoneyAmount.Name = "MoneyAmount";
@@ -259,8 +252,6 @@ namespace BorsaApplication
             // MoneyAccept
             // 
             this.MoneyAccept.DataPropertyName = "MoneyAccept";
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft YaHei UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.MoneyAccept.DefaultCellStyle = dataGridViewCellStyle5;
             this.MoneyAccept.HeaderText = "Money Accept";
             this.MoneyAccept.MinimumWidth = 6;
             this.MoneyAccept.Name = "MoneyAccept";

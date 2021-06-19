@@ -29,6 +29,9 @@ namespace BorsaApplication
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dgvCuzdan = new System.Windows.Forms.DataGridView();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
@@ -41,11 +44,15 @@ namespace BorsaApplication
             this.btnSatim = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
             this.button2 = new System.Windows.Forms.Button();
+            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.ItemName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ItemID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ItemAmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DateOfPurchase = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCuzdan)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -65,13 +72,36 @@ namespace BorsaApplication
             // 
             // dgvCuzdan
             // 
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
+            this.dgvCuzdan.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvCuzdan.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvCuzdan.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
-            this.dgvCuzdan.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.dgvCuzdan.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvCuzdan.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dgvCuzdan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvCuzdan.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ItemName,
+            this.ItemID,
+            this.ItemAmount,
+            this.DateOfPurchase});
             this.dgvCuzdan.Cursor = System.Windows.Forms.Cursors.Default;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvCuzdan.DefaultCellStyle = dataGridViewCellStyle6;
             this.dgvCuzdan.GridColor = System.Drawing.SystemColors.AppWorkspace;
-            this.dgvCuzdan.Location = new System.Drawing.Point(23, 37);
+            this.dgvCuzdan.Location = new System.Drawing.Point(27, 37);
             this.dgvCuzdan.Name = "dgvCuzdan";
             this.dgvCuzdan.RowHeadersVisible = false;
             this.dgvCuzdan.RowHeadersWidth = 51;
@@ -177,44 +207,6 @@ namespace BorsaApplication
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Rapor";
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(48, 71);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(148, 24);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "Başlangıç Tarihi:";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(85, 149);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(105, 24);
-            this.label5.TabIndex = 3;
-            this.label5.Text = "Bitiş Tarihi:";
-            // 
-            // maskedTextBox1
-            // 
-            this.maskedTextBox1.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maskedTextBox1.Location = new System.Drawing.Point(196, 146);
-            this.maskedTextBox1.Mask = "00/00/0000";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(121, 34);
-            this.maskedTextBox1.TabIndex = 4;
-            this.maskedTextBox1.ValidatingType = typeof(System.DateTime);
-            // 
-            // maskedTextBox2
-            // 
-            this.maskedTextBox2.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maskedTextBox2.Location = new System.Drawing.Point(196, 68);
-            this.maskedTextBox2.Mask = "00/00/0000";
-            this.maskedTextBox2.Name = "maskedTextBox2";
-            this.maskedTextBox2.Size = new System.Drawing.Size(121, 34);
-            this.maskedTextBox2.TabIndex = 5;
-            this.maskedTextBox2.ValidatingType = typeof(System.DateTime);
-            // 
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.Lime;
@@ -226,6 +218,76 @@ namespace BorsaApplication
             this.button2.Text = "RAPOR OLUŞTUR";
             this.button2.UseVisualStyleBackColor = false;
             // 
+            // maskedTextBox2
+            // 
+            this.maskedTextBox2.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.maskedTextBox2.Location = new System.Drawing.Point(196, 68);
+            this.maskedTextBox2.Mask = "00/00/0000";
+            this.maskedTextBox2.Name = "maskedTextBox2";
+            this.maskedTextBox2.Size = new System.Drawing.Size(121, 34);
+            this.maskedTextBox2.TabIndex = 5;
+            this.maskedTextBox2.ValidatingType = typeof(System.DateTime);
+            // 
+            // maskedTextBox1
+            // 
+            this.maskedTextBox1.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.maskedTextBox1.Location = new System.Drawing.Point(196, 146);
+            this.maskedTextBox1.Mask = "00/00/0000";
+            this.maskedTextBox1.Name = "maskedTextBox1";
+            this.maskedTextBox1.Size = new System.Drawing.Size(121, 34);
+            this.maskedTextBox1.TabIndex = 4;
+            this.maskedTextBox1.ValidatingType = typeof(System.DateTime);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(85, 149);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(105, 24);
+            this.label5.TabIndex = 3;
+            this.label5.Text = "Bitiş Tarihi:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(48, 71);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(148, 24);
+            this.label4.TabIndex = 2;
+            this.label4.Text = "Başlangıç Tarihi:";
+            // 
+            // ItemName
+            // 
+            this.ItemName.DataPropertyName = "ItemName";
+            this.ItemName.HeaderText = "Item Name";
+            this.ItemName.MinimumWidth = 6;
+            this.ItemName.Name = "ItemName";
+            this.ItemName.ReadOnly = true;
+            // 
+            // ItemID
+            // 
+            this.ItemID.DataPropertyName = "ItemID";
+            this.ItemID.HeaderText = "Item ID";
+            this.ItemID.MinimumWidth = 6;
+            this.ItemID.Name = "ItemID";
+            this.ItemID.ReadOnly = true;
+            // 
+            // ItemAmount
+            // 
+            this.ItemAmount.DataPropertyName = "ItemAmount";
+            this.ItemAmount.HeaderText = "ItemAmount";
+            this.ItemAmount.MinimumWidth = 6;
+            this.ItemAmount.Name = "ItemAmount";
+            this.ItemAmount.ReadOnly = true;
+            // 
+            // DateOfPurchase
+            // 
+            this.DateOfPurchase.DataPropertyName = "DateOfPurchase";
+            this.DateOfPurchase.HeaderText = "Date Of Purchase";
+            this.DateOfPurchase.MinimumWidth = 6;
+            this.DateOfPurchase.Name = "DateOfPurchase";
+            this.DateOfPurchase.ReadOnly = true;
+            // 
             // Cuzdan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -235,6 +297,7 @@ namespace BorsaApplication
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "Cuzdan";
+            this.Load += new System.EventHandler(this.Cuzdan_Load);
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvCuzdan)).EndInit();
             this.groupBox2.ResumeLayout(false);
@@ -264,5 +327,9 @@ namespace BorsaApplication
         private System.Windows.Forms.MaskedTextBox maskedTextBox1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ItemName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ItemID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ItemAmount;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DateOfPurchase;
     }
 }

@@ -22,6 +22,7 @@ namespace BorsaApplication
 
         Sqlbaglanti baglanti = new Sqlbaglanti();
         int itemid;
+        string itemName;
         private void btnCoinEkle_Click(object sender, EventArgs e)
         {
             SqlCommand sqlkomut = new SqlCommand("Select * From Tbl_Items Where ItemName=@p1", baglanti.baglanti());
@@ -29,9 +30,11 @@ namespace BorsaApplication
             SqlDataReader dataReader = sqlkomut.ExecuteReader();
 
             if (dataReader.Read())
-              itemid = Convert.ToInt32(dataReader["ItemID"]);
-
-            SqlCommand komut = new SqlCommand("Execute ItemEkleme "+userid1+","+itemid+","+txtCoinMiktar.Text+","+txtSatisFiyat.Text, baglanti.baglanti());
+            {
+                itemid = Convert.ToInt32(dataReader["ItemID"]);
+                itemName = dataReader["ItemName"].ToString();
+            }
+            SqlCommand komut = new SqlCommand("Execute ItemEkleme "+"'"+userid1+"'"+","+itemid+","+"'"+itemName+"'"+","+txtCoinMiktar.Text+","+txtSatisFiyat.Text, baglanti.baglanti());
             komut.ExecuteNonQuery();                         //ItemEkleme procedure ile admine gonderilmek uzere sisteme coin ekleniyor.
             MessageBox.Show("Onay için bekleniyor");
             baglanti.baglanti().Close();

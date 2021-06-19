@@ -154,7 +154,7 @@ namespace BorsaApplication
 
         private void btnCuzdan_Click(object sender, EventArgs e)
         {
-            Cuzdan cuzdan = new Cuzdan();
+            Cuzdan cuzdan = new Cuzdan(kullaniciAdi);
             cuzdan.Show();
         }
 
