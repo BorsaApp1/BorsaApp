@@ -56,3 +56,6 @@ C:\Users\Eray DUMAN\Desktop\BorsaApp\BorsaApplication\obj\Debug\BorsaApplication
 C:\Users\Eray DUMAN\Desktop\BorsaApp\BorsaApplication\obj\Debug\BorsaApplication.csproj.CopyComplete
 C:\Users\Eray DUMAN\Desktop\BorsaApp\BorsaApplication\obj\Debug\BorsaApplication.exe
 C:\Users\Eray DUMAN\Desktop\BorsaApp\BorsaApplication\obj\Debug\BorsaApplication.pdb
+C:\Users\becau\Documents\GitHub\BorsaApp\BorsaApplication\obj\Debug\BorsaApplication.Cuzdan.resources
+C:\Users\becau\Documents\GitHub\BorsaApp\BorsaApplication\obj\Debug\BorsaApplication.csproj.ResolveComReference.cache
+C:\Users\becau\Documents\GitHub\BorsaApp\BorsaApplication\obj\Debug\BorsaApplication.Rapor.resources

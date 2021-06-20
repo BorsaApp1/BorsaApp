@@ -33,6 +33,8 @@ namespace BorsaApplication
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AnaEkran));
             this.mtabCoin = new MetroFramework.Controls.MetroTabControl();
             this.BatteryPage = new System.Windows.Forms.TabPage();
+            this.txtBtryFiyat = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.lblParaBattery = new System.Windows.Forms.Label();
             this.txtMiktarBattery = new System.Windows.Forms.TextBox();
@@ -46,6 +48,8 @@ namespace BorsaApplication
             this.BatteryItemPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.BtryDateOfPurchase = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.BigPage = new System.Windows.Forms.TabPage();
+            this.txtBigFiyat = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.lblParaBig = new System.Windows.Forms.Label();
             this.txtMiktarBig = new System.Windows.Forms.TextBox();
@@ -59,6 +63,8 @@ namespace BorsaApplication
             this.BigItemPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bgDateOfPurchase = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PowerPage = new System.Windows.Forms.TabPage();
+            this.txtPwrFiyat = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.lblParaPower = new System.Windows.Forms.Label();
             this.txtMiktarPower = new System.Windows.Forms.TextBox();
@@ -72,6 +78,8 @@ namespace BorsaApplication
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pwrDateOfPurchase = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.RainPage = new System.Windows.Forms.TabPage();
+            this.txtRainFiyat = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.lblparaRain = new System.Windows.Forms.Label();
             this.txtMiktarRain = new System.Windows.Forms.TextBox();
@@ -85,6 +93,8 @@ namespace BorsaApplication
             this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.RnDateOfPurchase = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.RedPage = new System.Windows.Forms.TabPage();
+            this.txtRedFiyat = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.lblParaRed = new System.Windows.Forms.Label();
             this.txtMiktarRed = new System.Windows.Forms.TextBox();
@@ -98,6 +108,8 @@ namespace BorsaApplication
             this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.rdDateOfPurchase = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SpeedPage = new System.Windows.Forms.TabPage();
+            this.txtSpdFiyat = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.lblParaSpeed = new System.Windows.Forms.Label();
             this.txtMiktarSpeed = new System.Windows.Forms.TextBox();
@@ -111,6 +123,8 @@ namespace BorsaApplication
             this.dataGridViewTextBoxColumn16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.spdDateOfPurchase = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.WinPage = new System.Windows.Forms.TabPage();
+            this.txtWinFiyat = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.lblParaWin = new System.Windows.Forms.Label();
             this.txtMiktarWin = new System.Windows.Forms.TextBox();
@@ -124,6 +138,8 @@ namespace BorsaApplication
             this.dataGridViewTextBoxColumn20 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.wnDateOfPurchase = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.WolfPage = new System.Windows.Forms.TabPage();
+            this.txtWolfFiyat = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.lblParaWolf = new System.Windows.Forms.Label();
             this.txtMiktarWolf = new System.Windows.Forms.TextBox();
@@ -148,22 +164,6 @@ namespace BorsaApplication
             this.tbl_UserItemsTableAdapter = new BorsaApplication.StockMarketDataDataSetTableAdapters.Tbl_UserItemsTableAdapter();
             this.stockMarketDataDataSet1 = new BorsaApplication.StockMarketDataDataSet();
             this.tblItemsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.txtBtryFiyat = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtBigFiyat = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtPwrFiyat = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txtRainFiyat = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.txtRedFiyat = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.txtSpdFiyat = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.txtWinFiyat = new System.Windows.Forms.TextBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.txtWolfFiyat = new System.Windows.Forms.TextBox();
-            this.label15 = new System.Windows.Forms.Label();
             this.mtabCoin.SuspendLayout();
             this.BatteryPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -211,11 +211,12 @@ namespace BorsaApplication
             this.mtabCoin.Controls.Add(this.Anapage);
             this.mtabCoin.FontSize = MetroFramework.MetroTabControlSize.Tall;
             this.mtabCoin.FontWeight = MetroFramework.MetroTabControlWeight.Regular;
-            this.mtabCoin.Location = new System.Drawing.Point(0, 28);
+            this.mtabCoin.Location = new System.Drawing.Point(0, 23);
+            this.mtabCoin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.mtabCoin.Multiline = true;
             this.mtabCoin.Name = "mtabCoin";
-            this.mtabCoin.SelectedIndex = 0;
-            this.mtabCoin.Size = new System.Drawing.Size(989, 534);
+            this.mtabCoin.SelectedIndex = 6;
+            this.mtabCoin.Size = new System.Drawing.Size(742, 434);
             this.mtabCoin.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.mtabCoin.TabIndex = 0;
             this.mtabCoin.UseSelectable = true;
@@ -233,19 +234,39 @@ namespace BorsaApplication
             this.BatteryPage.Controls.Add(this.btnAlımBattery);
             this.BatteryPage.Controls.Add(this.dgvBattery);
             this.BatteryPage.Location = new System.Drawing.Point(4, 84);
+            this.BatteryPage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BatteryPage.Name = "BatteryPage";
-            this.BatteryPage.Size = new System.Drawing.Size(981, 446);
+            this.BatteryPage.Size = new System.Drawing.Size(734, 346);
             this.BatteryPage.TabIndex = 0;
             this.BatteryPage.Tag = "";
             this.BatteryPage.Text = "Battery Coin";
             this.BatteryPage.Enter += new System.EventHandler(this.BatteryPage_Enter);
             // 
+            // txtBtryFiyat
+            // 
+            this.txtBtryFiyat.Location = new System.Drawing.Point(140, 252);
+            this.txtBtryFiyat.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtBtryFiyat.Name = "txtBtryFiyat";
+            this.txtBtryFiyat.Size = new System.Drawing.Size(80, 20);
+            this.txtBtryFiyat.TabIndex = 35;
+            // 
+            // label2
+            // 
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label2.Location = new System.Drawing.Point(102, 250);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(42, 20);
+            this.label2.TabIndex = 34;
+            this.label2.Text = "Fiyat:";
+            // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(488, 387);
+            this.pictureBox2.Location = new System.Drawing.Point(360, 310);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(25, 33);
+            this.pictureBox2.Size = new System.Drawing.Size(19, 27);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 33;
             this.pictureBox2.TabStop = false;
@@ -255,26 +276,29 @@ namespace BorsaApplication
             this.lblParaBattery.BackColor = System.Drawing.Color.Transparent;
             this.lblParaBattery.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblParaBattery.ForeColor = System.Drawing.Color.Black;
-            this.lblParaBattery.Location = new System.Drawing.Point(429, 387);
+            this.lblParaBattery.Location = new System.Drawing.Point(255, 310);
+            this.lblParaBattery.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblParaBattery.Name = "lblParaBattery";
-            this.lblParaBattery.Size = new System.Drawing.Size(71, 33);
+            this.lblParaBattery.Size = new System.Drawing.Size(101, 31);
             this.lblParaBattery.TabIndex = 32;
             this.lblParaBattery.Text = "label1";
             // 
             // txtMiktarBattery
             // 
-            this.txtMiktarBattery.Location = new System.Drawing.Point(187, 350);
+            this.txtMiktarBattery.Location = new System.Drawing.Point(140, 284);
+            this.txtMiktarBattery.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtMiktarBattery.Multiline = true;
             this.txtMiktarBattery.Name = "txtMiktarBattery";
-            this.txtMiktarBattery.Size = new System.Drawing.Size(106, 24);
+            this.txtMiktarBattery.Size = new System.Drawing.Size(80, 20);
             this.txtMiktarBattery.TabIndex = 31;
             // 
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(61, 350);
+            this.label1.Location = new System.Drawing.Point(37, 284);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(131, 24);
+            this.label1.Size = new System.Drawing.Size(107, 20);
             this.label1.TabIndex = 30;
             this.label1.Text = "Alınacak Miktar:";
             // 
@@ -282,9 +306,10 @@ namespace BorsaApplication
             // 
             this.btnAlımBattery.BackColor = System.Drawing.Color.Lime;
             this.btnAlımBattery.Font = new System.Drawing.Font("Modern No. 20", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAlımBattery.Location = new System.Drawing.Point(187, 393);
+            this.btnAlımBattery.Location = new System.Drawing.Point(140, 319);
+            this.btnAlımBattery.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAlımBattery.Name = "btnAlımBattery";
-            this.btnAlımBattery.Size = new System.Drawing.Size(106, 27);
+            this.btnAlımBattery.Size = new System.Drawing.Size(80, 22);
             this.btnAlımBattery.TabIndex = 29;
             this.btnAlımBattery.Text = "ALIM";
             this.btnAlımBattery.UseVisualStyleBackColor = false;
@@ -305,13 +330,14 @@ namespace BorsaApplication
             this.BtryDateOfPurchase});
             this.dgvBattery.Cursor = System.Windows.Forms.Cursors.Default;
             this.dgvBattery.GridColor = System.Drawing.SystemColors.AppWorkspace;
-            this.dgvBattery.Location = new System.Drawing.Point(3, 3);
+            this.dgvBattery.Location = new System.Drawing.Point(2, 2);
+            this.dgvBattery.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgvBattery.Name = "dgvBattery";
             this.dgvBattery.ReadOnly = true;
             this.dgvBattery.RowHeadersVisible = false;
             this.dgvBattery.RowHeadersWidth = 51;
             this.dgvBattery.RowTemplate.Height = 24;
-            this.dgvBattery.Size = new System.Drawing.Size(975, 302);
+            this.dgvBattery.Size = new System.Drawing.Size(731, 245);
             this.dgvBattery.TabIndex = 0;
             // 
             // BatteryUserID
@@ -374,19 +400,39 @@ namespace BorsaApplication
             this.BigPage.Controls.Add(this.btnAlımBig);
             this.BigPage.Controls.Add(this.dgvBig);
             this.BigPage.Location = new System.Drawing.Point(4, 84);
+            this.BigPage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BigPage.Name = "BigPage";
-            this.BigPage.Size = new System.Drawing.Size(981, 446);
+            this.BigPage.Size = new System.Drawing.Size(734, 346);
             this.BigPage.TabIndex = 1;
             this.BigPage.Tag = "";
             this.BigPage.Text = "  Big Coin";
             this.BigPage.Enter += new System.EventHandler(this.BigPage_Enter);
             // 
+            // txtBigFiyat
+            // 
+            this.txtBigFiyat.Location = new System.Drawing.Point(140, 252);
+            this.txtBigFiyat.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtBigFiyat.Name = "txtBigFiyat";
+            this.txtBigFiyat.Size = new System.Drawing.Size(80, 20);
+            this.txtBigFiyat.TabIndex = 40;
+            // 
+            // label3
+            // 
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label3.Location = new System.Drawing.Point(102, 250);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(42, 20);
+            this.label3.TabIndex = 39;
+            this.label3.Text = "Fiyat:";
+            // 
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(488, 387);
+            this.pictureBox3.Location = new System.Drawing.Point(360, 310);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(27, 33);
+            this.pictureBox3.Size = new System.Drawing.Size(20, 27);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 38;
             this.pictureBox3.TabStop = false;
@@ -396,26 +442,29 @@ namespace BorsaApplication
             this.lblParaBig.BackColor = System.Drawing.Color.Transparent;
             this.lblParaBig.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblParaBig.ForeColor = System.Drawing.Color.Black;
-            this.lblParaBig.Location = new System.Drawing.Point(429, 387);
+            this.lblParaBig.Location = new System.Drawing.Point(255, 310);
+            this.lblParaBig.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblParaBig.Name = "lblParaBig";
-            this.lblParaBig.Size = new System.Drawing.Size(71, 33);
+            this.lblParaBig.Size = new System.Drawing.Size(101, 31);
             this.lblParaBig.TabIndex = 37;
             this.lblParaBig.Text = "label1";
             // 
             // txtMiktarBig
             // 
-            this.txtMiktarBig.Location = new System.Drawing.Point(187, 350);
+            this.txtMiktarBig.Location = new System.Drawing.Point(140, 284);
+            this.txtMiktarBig.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtMiktarBig.Multiline = true;
             this.txtMiktarBig.Name = "txtMiktarBig";
-            this.txtMiktarBig.Size = new System.Drawing.Size(106, 24);
+            this.txtMiktarBig.Size = new System.Drawing.Size(80, 20);
             this.txtMiktarBig.TabIndex = 36;
             // 
             // label4
             // 
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label4.Location = new System.Drawing.Point(61, 350);
+            this.label4.Location = new System.Drawing.Point(37, 284);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(131, 24);
+            this.label4.Size = new System.Drawing.Size(109, 20);
             this.label4.TabIndex = 35;
             this.label4.Text = "Alınacak Miktar:";
             // 
@@ -423,9 +472,10 @@ namespace BorsaApplication
             // 
             this.btnAlımBig.BackColor = System.Drawing.Color.Lime;
             this.btnAlımBig.Font = new System.Drawing.Font("Modern No. 20", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAlımBig.Location = new System.Drawing.Point(187, 393);
+            this.btnAlımBig.Location = new System.Drawing.Point(140, 319);
+            this.btnAlımBig.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAlımBig.Name = "btnAlımBig";
-            this.btnAlımBig.Size = new System.Drawing.Size(106, 27);
+            this.btnAlımBig.Size = new System.Drawing.Size(80, 22);
             this.btnAlımBig.TabIndex = 34;
             this.btnAlımBig.Text = "ALIM";
             this.btnAlımBig.UseVisualStyleBackColor = false;
@@ -446,12 +496,13 @@ namespace BorsaApplication
             this.bgDateOfPurchase});
             this.dgvBig.Cursor = System.Windows.Forms.Cursors.Default;
             this.dgvBig.GridColor = System.Drawing.SystemColors.AppWorkspace;
-            this.dgvBig.Location = new System.Drawing.Point(3, 3);
+            this.dgvBig.Location = new System.Drawing.Point(2, 2);
+            this.dgvBig.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgvBig.Name = "dgvBig";
             this.dgvBig.RowHeadersVisible = false;
             this.dgvBig.RowHeadersWidth = 51;
             this.dgvBig.RowTemplate.Height = 24;
-            this.dgvBig.Size = new System.Drawing.Size(975, 302);
+            this.dgvBig.Size = new System.Drawing.Size(731, 245);
             this.dgvBig.TabIndex = 1;
             // 
             // BigUserID
@@ -509,18 +560,38 @@ namespace BorsaApplication
             this.PowerPage.Controls.Add(this.btnAlımPower);
             this.PowerPage.Controls.Add(this.dgvPower);
             this.PowerPage.Location = new System.Drawing.Point(4, 84);
+            this.PowerPage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.PowerPage.Name = "PowerPage";
-            this.PowerPage.Size = new System.Drawing.Size(981, 446);
+            this.PowerPage.Size = new System.Drawing.Size(734, 346);
             this.PowerPage.TabIndex = 2;
             this.PowerPage.Text = "Power Coin";
             this.PowerPage.Enter += new System.EventHandler(this.PowerPage_Enter);
             // 
+            // txtPwrFiyat
+            // 
+            this.txtPwrFiyat.Location = new System.Drawing.Point(140, 252);
+            this.txtPwrFiyat.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtPwrFiyat.Name = "txtPwrFiyat";
+            this.txtPwrFiyat.Size = new System.Drawing.Size(80, 20);
+            this.txtPwrFiyat.TabIndex = 43;
+            // 
+            // label5
+            // 
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label5.Location = new System.Drawing.Point(102, 250);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(42, 20);
+            this.label5.TabIndex = 42;
+            this.label5.Text = "Fiyat:";
+            // 
             // pictureBox4
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(488, 387);
+            this.pictureBox4.Location = new System.Drawing.Point(360, 310);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(27, 33);
+            this.pictureBox4.Size = new System.Drawing.Size(20, 27);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 41;
             this.pictureBox4.TabStop = false;
@@ -530,26 +601,29 @@ namespace BorsaApplication
             this.lblParaPower.BackColor = System.Drawing.Color.Transparent;
             this.lblParaPower.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblParaPower.ForeColor = System.Drawing.Color.Black;
-            this.lblParaPower.Location = new System.Drawing.Point(429, 387);
+            this.lblParaPower.Location = new System.Drawing.Point(255, 310);
+            this.lblParaPower.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblParaPower.Name = "lblParaPower";
-            this.lblParaPower.Size = new System.Drawing.Size(71, 33);
+            this.lblParaPower.Size = new System.Drawing.Size(101, 31);
             this.lblParaPower.TabIndex = 40;
             this.lblParaPower.Text = "label1";
             // 
             // txtMiktarPower
             // 
-            this.txtMiktarPower.Location = new System.Drawing.Point(187, 350);
+            this.txtMiktarPower.Location = new System.Drawing.Point(140, 284);
+            this.txtMiktarPower.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtMiktarPower.Multiline = true;
             this.txtMiktarPower.Name = "txtMiktarPower";
-            this.txtMiktarPower.Size = new System.Drawing.Size(106, 24);
+            this.txtMiktarPower.Size = new System.Drawing.Size(80, 20);
             this.txtMiktarPower.TabIndex = 39;
             // 
             // label6
             // 
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label6.Location = new System.Drawing.Point(61, 350);
+            this.label6.Location = new System.Drawing.Point(37, 284);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(131, 24);
+            this.label6.Size = new System.Drawing.Size(110, 20);
             this.label6.TabIndex = 38;
             this.label6.Text = "Alınacak Miktar:";
             // 
@@ -557,9 +631,10 @@ namespace BorsaApplication
             // 
             this.btnAlımPower.BackColor = System.Drawing.Color.Lime;
             this.btnAlımPower.Font = new System.Drawing.Font("Modern No. 20", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAlımPower.Location = new System.Drawing.Point(187, 393);
+            this.btnAlımPower.Location = new System.Drawing.Point(140, 319);
+            this.btnAlımPower.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAlımPower.Name = "btnAlımPower";
-            this.btnAlımPower.Size = new System.Drawing.Size(106, 27);
+            this.btnAlımPower.Size = new System.Drawing.Size(80, 22);
             this.btnAlımPower.TabIndex = 37;
             this.btnAlımPower.Text = "ALIM";
             this.btnAlımPower.UseVisualStyleBackColor = false;
@@ -580,13 +655,14 @@ namespace BorsaApplication
             this.pwrDateOfPurchase});
             this.dgvPower.Cursor = System.Windows.Forms.Cursors.Default;
             this.dgvPower.GridColor = System.Drawing.SystemColors.AppWorkspace;
-            this.dgvPower.Location = new System.Drawing.Point(3, 3);
+            this.dgvPower.Location = new System.Drawing.Point(2, 2);
+            this.dgvPower.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgvPower.Name = "dgvPower";
             this.dgvPower.ReadOnly = true;
             this.dgvPower.RowHeadersVisible = false;
             this.dgvPower.RowHeadersWidth = 51;
             this.dgvPower.RowTemplate.Height = 24;
-            this.dgvPower.Size = new System.Drawing.Size(975, 302);
+            this.dgvPower.Size = new System.Drawing.Size(731, 245);
             this.dgvPower.TabIndex = 36;
             // 
             // dataGridViewTextBoxColumn1
@@ -649,18 +725,38 @@ namespace BorsaApplication
             this.RainPage.Controls.Add(this.btnAlımRain);
             this.RainPage.Controls.Add(this.dgvRain);
             this.RainPage.Location = new System.Drawing.Point(4, 84);
+            this.RainPage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.RainPage.Name = "RainPage";
-            this.RainPage.Size = new System.Drawing.Size(981, 446);
+            this.RainPage.Size = new System.Drawing.Size(734, 346);
             this.RainPage.TabIndex = 3;
             this.RainPage.Text = "Rain Coin";
             this.RainPage.Enter += new System.EventHandler(this.RainPage_Enter);
             // 
+            // txtRainFiyat
+            // 
+            this.txtRainFiyat.Location = new System.Drawing.Point(140, 252);
+            this.txtRainFiyat.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtRainFiyat.Name = "txtRainFiyat";
+            this.txtRainFiyat.Size = new System.Drawing.Size(80, 20);
+            this.txtRainFiyat.TabIndex = 44;
+            // 
+            // label7
+            // 
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label7.Location = new System.Drawing.Point(102, 250);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(42, 20);
+            this.label7.TabIndex = 43;
+            this.label7.Text = "Fiyat:";
+            // 
             // pictureBox5
             // 
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(488, 387);
+            this.pictureBox5.Location = new System.Drawing.Point(360, 310);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(27, 33);
+            this.pictureBox5.Size = new System.Drawing.Size(20, 27);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 42;
             this.pictureBox5.TabStop = false;
@@ -670,26 +766,29 @@ namespace BorsaApplication
             this.lblparaRain.BackColor = System.Drawing.Color.Transparent;
             this.lblparaRain.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblparaRain.ForeColor = System.Drawing.Color.Black;
-            this.lblparaRain.Location = new System.Drawing.Point(429, 387);
+            this.lblparaRain.Location = new System.Drawing.Point(255, 310);
+            this.lblparaRain.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblparaRain.Name = "lblparaRain";
-            this.lblparaRain.Size = new System.Drawing.Size(71, 33);
+            this.lblparaRain.Size = new System.Drawing.Size(101, 31);
             this.lblparaRain.TabIndex = 41;
             this.lblparaRain.Text = "label1";
             // 
             // txtMiktarRain
             // 
-            this.txtMiktarRain.Location = new System.Drawing.Point(187, 350);
+            this.txtMiktarRain.Location = new System.Drawing.Point(140, 284);
+            this.txtMiktarRain.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtMiktarRain.Multiline = true;
             this.txtMiktarRain.Name = "txtMiktarRain";
-            this.txtMiktarRain.Size = new System.Drawing.Size(106, 24);
+            this.txtMiktarRain.Size = new System.Drawing.Size(80, 20);
             this.txtMiktarRain.TabIndex = 40;
             // 
             // label8
             // 
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label8.Location = new System.Drawing.Point(61, 350);
+            this.label8.Location = new System.Drawing.Point(37, 284);
+            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(131, 24);
+            this.label8.Size = new System.Drawing.Size(113, 20);
             this.label8.TabIndex = 39;
             this.label8.Text = "Alınacak Miktar:";
             // 
@@ -697,9 +796,10 @@ namespace BorsaApplication
             // 
             this.btnAlımRain.BackColor = System.Drawing.Color.Lime;
             this.btnAlımRain.Font = new System.Drawing.Font("Modern No. 20", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAlımRain.Location = new System.Drawing.Point(187, 393);
+            this.btnAlımRain.Location = new System.Drawing.Point(140, 319);
+            this.btnAlımRain.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAlımRain.Name = "btnAlımRain";
-            this.btnAlımRain.Size = new System.Drawing.Size(106, 27);
+            this.btnAlımRain.Size = new System.Drawing.Size(80, 22);
             this.btnAlımRain.TabIndex = 38;
             this.btnAlımRain.Text = "ALIM";
             this.btnAlımRain.UseVisualStyleBackColor = false;
@@ -720,13 +820,14 @@ namespace BorsaApplication
             this.RnDateOfPurchase});
             this.dgvRain.Cursor = System.Windows.Forms.Cursors.Default;
             this.dgvRain.GridColor = System.Drawing.SystemColors.AppWorkspace;
-            this.dgvRain.Location = new System.Drawing.Point(3, 3);
+            this.dgvRain.Location = new System.Drawing.Point(2, 2);
+            this.dgvRain.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgvRain.Name = "dgvRain";
             this.dgvRain.ReadOnly = true;
             this.dgvRain.RowHeadersVisible = false;
             this.dgvRain.RowHeadersWidth = 51;
             this.dgvRain.RowTemplate.Height = 24;
-            this.dgvRain.Size = new System.Drawing.Size(975, 302);
+            this.dgvRain.Size = new System.Drawing.Size(731, 245);
             this.dgvRain.TabIndex = 37;
             // 
             // dataGridViewTextBoxColumn5
@@ -789,18 +890,38 @@ namespace BorsaApplication
             this.RedPage.Controls.Add(this.btnAlımRed);
             this.RedPage.Controls.Add(this.dgvRed);
             this.RedPage.Location = new System.Drawing.Point(4, 84);
+            this.RedPage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.RedPage.Name = "RedPage";
-            this.RedPage.Size = new System.Drawing.Size(981, 446);
+            this.RedPage.Size = new System.Drawing.Size(734, 346);
             this.RedPage.TabIndex = 4;
             this.RedPage.Text = "Red Coin";
             this.RedPage.Enter += new System.EventHandler(this.RedPage_Enter);
             // 
+            // txtRedFiyat
+            // 
+            this.txtRedFiyat.Location = new System.Drawing.Point(140, 252);
+            this.txtRedFiyat.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtRedFiyat.Name = "txtRedFiyat";
+            this.txtRedFiyat.Size = new System.Drawing.Size(80, 20);
+            this.txtRedFiyat.TabIndex = 44;
+            // 
+            // label9
+            // 
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label9.Location = new System.Drawing.Point(102, 250);
+            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(42, 20);
+            this.label9.TabIndex = 43;
+            this.label9.Text = "Fiyat:";
+            // 
             // pictureBox6
             // 
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(488, 387);
+            this.pictureBox6.Location = new System.Drawing.Point(360, 310);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(27, 33);
+            this.pictureBox6.Size = new System.Drawing.Size(20, 27);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox6.TabIndex = 42;
             this.pictureBox6.TabStop = false;
@@ -810,26 +931,29 @@ namespace BorsaApplication
             this.lblParaRed.BackColor = System.Drawing.Color.Transparent;
             this.lblParaRed.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblParaRed.ForeColor = System.Drawing.Color.Black;
-            this.lblParaRed.Location = new System.Drawing.Point(429, 387);
+            this.lblParaRed.Location = new System.Drawing.Point(255, 310);
+            this.lblParaRed.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblParaRed.Name = "lblParaRed";
-            this.lblParaRed.Size = new System.Drawing.Size(71, 33);
+            this.lblParaRed.Size = new System.Drawing.Size(101, 31);
             this.lblParaRed.TabIndex = 41;
             this.lblParaRed.Text = "label1";
             // 
             // txtMiktarRed
             // 
-            this.txtMiktarRed.Location = new System.Drawing.Point(187, 350);
+            this.txtMiktarRed.Location = new System.Drawing.Point(140, 284);
+            this.txtMiktarRed.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtMiktarRed.Multiline = true;
             this.txtMiktarRed.Name = "txtMiktarRed";
-            this.txtMiktarRed.Size = new System.Drawing.Size(106, 24);
+            this.txtMiktarRed.Size = new System.Drawing.Size(80, 20);
             this.txtMiktarRed.TabIndex = 40;
             // 
             // label10
             // 
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label10.Location = new System.Drawing.Point(61, 350);
+            this.label10.Location = new System.Drawing.Point(37, 284);
+            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(131, 24);
+            this.label10.Size = new System.Drawing.Size(108, 20);
             this.label10.TabIndex = 39;
             this.label10.Text = "Alınacak Miktar:";
             // 
@@ -837,9 +961,10 @@ namespace BorsaApplication
             // 
             this.btnAlımRed.BackColor = System.Drawing.Color.Lime;
             this.btnAlımRed.Font = new System.Drawing.Font("Modern No. 20", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAlımRed.Location = new System.Drawing.Point(187, 393);
+            this.btnAlımRed.Location = new System.Drawing.Point(140, 319);
+            this.btnAlımRed.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAlımRed.Name = "btnAlımRed";
-            this.btnAlımRed.Size = new System.Drawing.Size(106, 27);
+            this.btnAlımRed.Size = new System.Drawing.Size(80, 22);
             this.btnAlımRed.TabIndex = 38;
             this.btnAlımRed.Text = "ALIM";
             this.btnAlımRed.UseVisualStyleBackColor = false;
@@ -860,13 +985,14 @@ namespace BorsaApplication
             this.rdDateOfPurchase});
             this.dgvRed.Cursor = System.Windows.Forms.Cursors.Default;
             this.dgvRed.GridColor = System.Drawing.SystemColors.AppWorkspace;
-            this.dgvRed.Location = new System.Drawing.Point(3, 3);
+            this.dgvRed.Location = new System.Drawing.Point(2, 2);
+            this.dgvRed.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgvRed.Name = "dgvRed";
             this.dgvRed.ReadOnly = true;
             this.dgvRed.RowHeadersVisible = false;
             this.dgvRed.RowHeadersWidth = 51;
             this.dgvRed.RowTemplate.Height = 24;
-            this.dgvRed.Size = new System.Drawing.Size(975, 302);
+            this.dgvRed.Size = new System.Drawing.Size(731, 245);
             this.dgvRed.TabIndex = 37;
             // 
             // dataGridViewTextBoxColumn9
@@ -929,18 +1055,38 @@ namespace BorsaApplication
             this.SpeedPage.Controls.Add(this.btnAlımSpeed);
             this.SpeedPage.Controls.Add(this.dgvSpeed);
             this.SpeedPage.Location = new System.Drawing.Point(4, 84);
+            this.SpeedPage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.SpeedPage.Name = "SpeedPage";
-            this.SpeedPage.Size = new System.Drawing.Size(981, 446);
+            this.SpeedPage.Size = new System.Drawing.Size(734, 346);
             this.SpeedPage.TabIndex = 5;
             this.SpeedPage.Text = "Speed Coin";
             this.SpeedPage.Enter += new System.EventHandler(this.SpeedPage_Enter);
             // 
+            // txtSpdFiyat
+            // 
+            this.txtSpdFiyat.Location = new System.Drawing.Point(140, 252);
+            this.txtSpdFiyat.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtSpdFiyat.Name = "txtSpdFiyat";
+            this.txtSpdFiyat.Size = new System.Drawing.Size(80, 20);
+            this.txtSpdFiyat.TabIndex = 44;
+            // 
+            // label11
+            // 
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label11.Location = new System.Drawing.Point(102, 250);
+            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(42, 20);
+            this.label11.TabIndex = 43;
+            this.label11.Text = "Fiyat:";
+            // 
             // pictureBox7
             // 
             this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(488, 387);
+            this.pictureBox7.Location = new System.Drawing.Point(360, 310);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(27, 33);
+            this.pictureBox7.Size = new System.Drawing.Size(20, 27);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox7.TabIndex = 42;
             this.pictureBox7.TabStop = false;
@@ -950,26 +1096,29 @@ namespace BorsaApplication
             this.lblParaSpeed.BackColor = System.Drawing.Color.Transparent;
             this.lblParaSpeed.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblParaSpeed.ForeColor = System.Drawing.Color.Black;
-            this.lblParaSpeed.Location = new System.Drawing.Point(429, 387);
+            this.lblParaSpeed.Location = new System.Drawing.Point(255, 310);
+            this.lblParaSpeed.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblParaSpeed.Name = "lblParaSpeed";
-            this.lblParaSpeed.Size = new System.Drawing.Size(71, 33);
+            this.lblParaSpeed.Size = new System.Drawing.Size(101, 31);
             this.lblParaSpeed.TabIndex = 41;
             this.lblParaSpeed.Text = "label1";
             // 
             // txtMiktarSpeed
             // 
-            this.txtMiktarSpeed.Location = new System.Drawing.Point(187, 350);
+            this.txtMiktarSpeed.Location = new System.Drawing.Point(140, 284);
+            this.txtMiktarSpeed.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtMiktarSpeed.Multiline = true;
             this.txtMiktarSpeed.Name = "txtMiktarSpeed";
-            this.txtMiktarSpeed.Size = new System.Drawing.Size(106, 24);
+            this.txtMiktarSpeed.Size = new System.Drawing.Size(80, 20);
             this.txtMiktarSpeed.TabIndex = 40;
             // 
             // label12
             // 
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label12.Location = new System.Drawing.Point(61, 350);
+            this.label12.Location = new System.Drawing.Point(37, 284);
+            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(131, 24);
+            this.label12.Size = new System.Drawing.Size(111, 20);
             this.label12.TabIndex = 39;
             this.label12.Text = "Alınacak Miktar:";
             // 
@@ -977,9 +1126,10 @@ namespace BorsaApplication
             // 
             this.btnAlımSpeed.BackColor = System.Drawing.Color.Lime;
             this.btnAlımSpeed.Font = new System.Drawing.Font("Modern No. 20", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAlımSpeed.Location = new System.Drawing.Point(187, 393);
+            this.btnAlımSpeed.Location = new System.Drawing.Point(140, 319);
+            this.btnAlımSpeed.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAlımSpeed.Name = "btnAlımSpeed";
-            this.btnAlımSpeed.Size = new System.Drawing.Size(106, 27);
+            this.btnAlımSpeed.Size = new System.Drawing.Size(80, 22);
             this.btnAlımSpeed.TabIndex = 38;
             this.btnAlımSpeed.Text = "ALIM";
             this.btnAlımSpeed.UseVisualStyleBackColor = false;
@@ -1000,13 +1150,14 @@ namespace BorsaApplication
             this.spdDateOfPurchase});
             this.dgvSpeed.Cursor = System.Windows.Forms.Cursors.Default;
             this.dgvSpeed.GridColor = System.Drawing.SystemColors.AppWorkspace;
-            this.dgvSpeed.Location = new System.Drawing.Point(3, 3);
+            this.dgvSpeed.Location = new System.Drawing.Point(2, 2);
+            this.dgvSpeed.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgvSpeed.Name = "dgvSpeed";
             this.dgvSpeed.ReadOnly = true;
             this.dgvSpeed.RowHeadersVisible = false;
             this.dgvSpeed.RowHeadersWidth = 51;
             this.dgvSpeed.RowTemplate.Height = 24;
-            this.dgvSpeed.Size = new System.Drawing.Size(975, 302);
+            this.dgvSpeed.Size = new System.Drawing.Size(731, 245);
             this.dgvSpeed.TabIndex = 37;
             // 
             // dataGridViewTextBoxColumn13
@@ -1069,18 +1220,38 @@ namespace BorsaApplication
             this.WinPage.Controls.Add(this.btnAlımWin);
             this.WinPage.Controls.Add(this.dgvWin);
             this.WinPage.Location = new System.Drawing.Point(4, 84);
+            this.WinPage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.WinPage.Name = "WinPage";
-            this.WinPage.Size = new System.Drawing.Size(981, 446);
+            this.WinPage.Size = new System.Drawing.Size(734, 346);
             this.WinPage.TabIndex = 6;
             this.WinPage.Text = "Win Coin";
             this.WinPage.Enter += new System.EventHandler(this.WinPage_Enter);
             // 
+            // txtWinFiyat
+            // 
+            this.txtWinFiyat.Location = new System.Drawing.Point(140, 252);
+            this.txtWinFiyat.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtWinFiyat.Name = "txtWinFiyat";
+            this.txtWinFiyat.Size = new System.Drawing.Size(80, 20);
+            this.txtWinFiyat.TabIndex = 44;
+            // 
+            // label13
+            // 
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label13.Location = new System.Drawing.Point(102, 250);
+            this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(42, 20);
+            this.label13.TabIndex = 43;
+            this.label13.Text = "Fiyat:";
+            // 
             // pictureBox8
             // 
             this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
-            this.pictureBox8.Location = new System.Drawing.Point(488, 387);
+            this.pictureBox8.Location = new System.Drawing.Point(360, 310);
+            this.pictureBox8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(27, 33);
+            this.pictureBox8.Size = new System.Drawing.Size(20, 27);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox8.TabIndex = 42;
             this.pictureBox8.TabStop = false;
@@ -1090,26 +1261,29 @@ namespace BorsaApplication
             this.lblParaWin.BackColor = System.Drawing.Color.Transparent;
             this.lblParaWin.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblParaWin.ForeColor = System.Drawing.Color.Black;
-            this.lblParaWin.Location = new System.Drawing.Point(429, 387);
+            this.lblParaWin.Location = new System.Drawing.Point(255, 310);
+            this.lblParaWin.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblParaWin.Name = "lblParaWin";
-            this.lblParaWin.Size = new System.Drawing.Size(71, 33);
+            this.lblParaWin.Size = new System.Drawing.Size(101, 31);
             this.lblParaWin.TabIndex = 41;
             this.lblParaWin.Text = "label1";
             // 
             // txtMiktarWin
             // 
-            this.txtMiktarWin.Location = new System.Drawing.Point(187, 350);
+            this.txtMiktarWin.Location = new System.Drawing.Point(140, 284);
+            this.txtMiktarWin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtMiktarWin.Multiline = true;
             this.txtMiktarWin.Name = "txtMiktarWin";
-            this.txtMiktarWin.Size = new System.Drawing.Size(106, 24);
+            this.txtMiktarWin.Size = new System.Drawing.Size(80, 20);
             this.txtMiktarWin.TabIndex = 40;
             // 
             // label14
             // 
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label14.Location = new System.Drawing.Point(61, 350);
+            this.label14.Location = new System.Drawing.Point(37, 284);
+            this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(131, 24);
+            this.label14.Size = new System.Drawing.Size(109, 20);
             this.label14.TabIndex = 39;
             this.label14.Text = "Alınacak Miktar:";
             // 
@@ -1117,9 +1291,10 @@ namespace BorsaApplication
             // 
             this.btnAlımWin.BackColor = System.Drawing.Color.Lime;
             this.btnAlımWin.Font = new System.Drawing.Font("Modern No. 20", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAlımWin.Location = new System.Drawing.Point(187, 393);
+            this.btnAlımWin.Location = new System.Drawing.Point(140, 319);
+            this.btnAlımWin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAlımWin.Name = "btnAlımWin";
-            this.btnAlımWin.Size = new System.Drawing.Size(106, 27);
+            this.btnAlımWin.Size = new System.Drawing.Size(80, 22);
             this.btnAlımWin.TabIndex = 38;
             this.btnAlımWin.Text = "ALIM";
             this.btnAlımWin.UseVisualStyleBackColor = false;
@@ -1140,13 +1315,14 @@ namespace BorsaApplication
             this.wnDateOfPurchase});
             this.dgvWin.Cursor = System.Windows.Forms.Cursors.Default;
             this.dgvWin.GridColor = System.Drawing.SystemColors.AppWorkspace;
-            this.dgvWin.Location = new System.Drawing.Point(3, 3);
+            this.dgvWin.Location = new System.Drawing.Point(2, 2);
+            this.dgvWin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgvWin.Name = "dgvWin";
             this.dgvWin.ReadOnly = true;
             this.dgvWin.RowHeadersVisible = false;
             this.dgvWin.RowHeadersWidth = 51;
             this.dgvWin.RowTemplate.Height = 24;
-            this.dgvWin.Size = new System.Drawing.Size(975, 302);
+            this.dgvWin.Size = new System.Drawing.Size(731, 245);
             this.dgvWin.TabIndex = 37;
             // 
             // dataGridViewTextBoxColumn17
@@ -1209,18 +1385,38 @@ namespace BorsaApplication
             this.WolfPage.Controls.Add(this.btnAlımWolf);
             this.WolfPage.Controls.Add(this.dgvWolf);
             this.WolfPage.Location = new System.Drawing.Point(4, 84);
+            this.WolfPage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.WolfPage.Name = "WolfPage";
-            this.WolfPage.Size = new System.Drawing.Size(981, 446);
+            this.WolfPage.Size = new System.Drawing.Size(734, 346);
             this.WolfPage.TabIndex = 7;
             this.WolfPage.Text = "Wolf Coin";
             this.WolfPage.Enter += new System.EventHandler(this.WolfPage_Enter);
             // 
+            // txtWolfFiyat
+            // 
+            this.txtWolfFiyat.Location = new System.Drawing.Point(140, 252);
+            this.txtWolfFiyat.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtWolfFiyat.Name = "txtWolfFiyat";
+            this.txtWolfFiyat.Size = new System.Drawing.Size(80, 20);
+            this.txtWolfFiyat.TabIndex = 44;
+            // 
+            // label15
+            // 
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label15.Location = new System.Drawing.Point(102, 250);
+            this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(42, 20);
+            this.label15.TabIndex = 43;
+            this.label15.Text = "Fiyat:";
+            // 
             // pictureBox9
             // 
             this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
-            this.pictureBox9.Location = new System.Drawing.Point(488, 387);
+            this.pictureBox9.Location = new System.Drawing.Point(360, 310);
+            this.pictureBox9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(27, 33);
+            this.pictureBox9.Size = new System.Drawing.Size(20, 27);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox9.TabIndex = 42;
             this.pictureBox9.TabStop = false;
@@ -1230,26 +1426,29 @@ namespace BorsaApplication
             this.lblParaWolf.BackColor = System.Drawing.Color.Transparent;
             this.lblParaWolf.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblParaWolf.ForeColor = System.Drawing.Color.Black;
-            this.lblParaWolf.Location = new System.Drawing.Point(429, 387);
+            this.lblParaWolf.Location = new System.Drawing.Point(255, 310);
+            this.lblParaWolf.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblParaWolf.Name = "lblParaWolf";
-            this.lblParaWolf.Size = new System.Drawing.Size(71, 33);
+            this.lblParaWolf.Size = new System.Drawing.Size(101, 31);
             this.lblParaWolf.TabIndex = 41;
             this.lblParaWolf.Text = "label1";
             // 
             // txtMiktarWolf
             // 
-            this.txtMiktarWolf.Location = new System.Drawing.Point(187, 350);
+            this.txtMiktarWolf.Location = new System.Drawing.Point(140, 284);
+            this.txtMiktarWolf.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtMiktarWolf.Multiline = true;
             this.txtMiktarWolf.Name = "txtMiktarWolf";
-            this.txtMiktarWolf.Size = new System.Drawing.Size(106, 24);
+            this.txtMiktarWolf.Size = new System.Drawing.Size(80, 20);
             this.txtMiktarWolf.TabIndex = 40;
             // 
             // label16
             // 
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label16.Location = new System.Drawing.Point(61, 350);
+            this.label16.Location = new System.Drawing.Point(37, 284);
+            this.label16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(131, 24);
+            this.label16.Size = new System.Drawing.Size(109, 20);
             this.label16.TabIndex = 39;
             this.label16.Text = "Alınacak Miktar:";
             // 
@@ -1257,9 +1456,10 @@ namespace BorsaApplication
             // 
             this.btnAlımWolf.BackColor = System.Drawing.Color.Lime;
             this.btnAlımWolf.Font = new System.Drawing.Font("Modern No. 20", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAlımWolf.Location = new System.Drawing.Point(187, 393);
+            this.btnAlımWolf.Location = new System.Drawing.Point(140, 319);
+            this.btnAlımWolf.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAlımWolf.Name = "btnAlımWolf";
-            this.btnAlımWolf.Size = new System.Drawing.Size(106, 27);
+            this.btnAlımWolf.Size = new System.Drawing.Size(80, 22);
             this.btnAlımWolf.TabIndex = 38;
             this.btnAlımWolf.Text = "ALIM";
             this.btnAlımWolf.UseVisualStyleBackColor = false;
@@ -1280,13 +1480,14 @@ namespace BorsaApplication
             this.wlfDateOfPurchase});
             this.dgvWolf.Cursor = System.Windows.Forms.Cursors.Default;
             this.dgvWolf.GridColor = System.Drawing.SystemColors.AppWorkspace;
-            this.dgvWolf.Location = new System.Drawing.Point(3, 3);
+            this.dgvWolf.Location = new System.Drawing.Point(2, 2);
+            this.dgvWolf.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgvWolf.Name = "dgvWolf";
             this.dgvWolf.ReadOnly = true;
             this.dgvWolf.RowHeadersVisible = false;
             this.dgvWolf.RowHeadersWidth = 51;
             this.dgvWolf.RowTemplate.Height = 24;
-            this.dgvWolf.Size = new System.Drawing.Size(975, 302);
+            this.dgvWolf.Size = new System.Drawing.Size(731, 245);
             this.dgvWolf.TabIndex = 37;
             // 
             // dataGridViewTextBoxColumn21
@@ -1349,17 +1550,18 @@ namespace BorsaApplication
             this.Anapage.Controls.Add(this.btnParaEkle);
             this.Anapage.HorizontalScrollbarBarColor = true;
             this.Anapage.HorizontalScrollbarHighlightOnWheel = false;
-            this.Anapage.HorizontalScrollbarSize = 10;
+            this.Anapage.HorizontalScrollbarSize = 8;
             this.Anapage.Location = new System.Drawing.Point(4, 84);
+            this.Anapage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Anapage.Name = "Anapage";
-            this.Anapage.Size = new System.Drawing.Size(981, 446);
+            this.Anapage.Size = new System.Drawing.Size(734, 346);
             this.Anapage.TabIndex = 8;
             this.Anapage.Tag = "";
             this.Anapage.Text = "AnaSayfa";
             this.Anapage.UseCustomBackColor = true;
             this.Anapage.VerticalScrollbarBarColor = true;
             this.Anapage.VerticalScrollbarHighlightOnWheel = false;
-            this.Anapage.VerticalScrollbarSize = 10;
+            this.Anapage.VerticalScrollbarSize = 8;
             this.Anapage.Enter += new System.EventHandler(this.Anapage_Enter);
             // 
             // btnCuzdan
@@ -1368,9 +1570,10 @@ namespace BorsaApplication
             this.btnCuzdan.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnCuzdan.Font = new System.Drawing.Font("Elephant", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCuzdan.ForeColor = System.Drawing.Color.Gold;
-            this.btnCuzdan.Location = new System.Drawing.Point(707, 162);
+            this.btnCuzdan.Location = new System.Drawing.Point(530, 132);
+            this.btnCuzdan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnCuzdan.Name = "btnCuzdan";
-            this.btnCuzdan.Size = new System.Drawing.Size(200, 39);
+            this.btnCuzdan.Size = new System.Drawing.Size(150, 32);
             this.btnCuzdan.TabIndex = 6;
             this.btnCuzdan.Text = "CÜZDAN";
             this.btnCuzdan.UseVisualStyleBackColor = false;
@@ -1379,9 +1582,10 @@ namespace BorsaApplication
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(831, 227);
+            this.pictureBox1.Location = new System.Drawing.Point(657, 184);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(31, 38);
+            this.pictureBox1.Size = new System.Drawing.Size(23, 31);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
@@ -1392,9 +1596,10 @@ namespace BorsaApplication
             this.lblPara.BackColor = System.Drawing.Color.Transparent;
             this.lblPara.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblPara.ForeColor = System.Drawing.Color.Gold;
-            this.lblPara.Location = new System.Drawing.Point(740, 236);
+            this.lblPara.Location = new System.Drawing.Point(559, 191);
+            this.lblPara.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblPara.Name = "lblPara";
-            this.lblPara.Size = new System.Drawing.Size(85, 29);
+            this.lblPara.Size = new System.Drawing.Size(66, 24);
             this.lblPara.TabIndex = 4;
             this.lblPara.Text = "label1";
             // 
@@ -1404,9 +1609,10 @@ namespace BorsaApplication
             this.btnCoinEkle.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnCoinEkle.Font = new System.Drawing.Font("Elephant", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCoinEkle.ForeColor = System.Drawing.Color.Gold;
-            this.btnCoinEkle.Location = new System.Drawing.Point(707, 24);
+            this.btnCoinEkle.Location = new System.Drawing.Point(530, 20);
+            this.btnCoinEkle.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnCoinEkle.Name = "btnCoinEkle";
-            this.btnCoinEkle.Size = new System.Drawing.Size(200, 39);
+            this.btnCoinEkle.Size = new System.Drawing.Size(150, 32);
             this.btnCoinEkle.TabIndex = 3;
             this.btnCoinEkle.Text = "COIN EKLEME";
             this.btnCoinEkle.UseVisualStyleBackColor = false;
@@ -1418,9 +1624,10 @@ namespace BorsaApplication
             this.btnParaEkle.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnParaEkle.Font = new System.Drawing.Font("Elephant", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnParaEkle.ForeColor = System.Drawing.Color.Gold;
-            this.btnParaEkle.Location = new System.Drawing.Point(707, 92);
+            this.btnParaEkle.Location = new System.Drawing.Point(530, 75);
+            this.btnParaEkle.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnParaEkle.Name = "btnParaEkle";
-            this.btnParaEkle.Size = new System.Drawing.Size(200, 39);
+            this.btnParaEkle.Size = new System.Drawing.Size(150, 32);
             this.btnParaEkle.TabIndex = 2;
             this.btnParaEkle.Text = "PARA EKLEME";
             this.btnParaEkle.UseVisualStyleBackColor = false;
@@ -1454,142 +1661,16 @@ namespace BorsaApplication
             // 
             this.tblItemsBindingSource.DataMember = "Tbl_Items";
             // 
-            // txtBtryFiyat
-            // 
-            this.txtBtryFiyat.Location = new System.Drawing.Point(187, 310);
-            this.txtBtryFiyat.Name = "txtBtryFiyat";
-            this.txtBtryFiyat.Size = new System.Drawing.Size(106, 22);
-            this.txtBtryFiyat.TabIndex = 35;
-            // 
-            // label2
-            // 
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(136, 308);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(56, 24);
-            this.label2.TabIndex = 34;
-            this.label2.Text = "Fiyat:";
-            // 
-            // txtBigFiyat
-            // 
-            this.txtBigFiyat.Location = new System.Drawing.Point(187, 310);
-            this.txtBigFiyat.Name = "txtBigFiyat";
-            this.txtBigFiyat.Size = new System.Drawing.Size(106, 22);
-            this.txtBigFiyat.TabIndex = 40;
-            // 
-            // label3
-            // 
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.Location = new System.Drawing.Point(136, 308);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(56, 24);
-            this.label3.TabIndex = 39;
-            this.label3.Text = "Fiyat:";
-            // 
-            // txtPwrFiyat
-            // 
-            this.txtPwrFiyat.Location = new System.Drawing.Point(187, 310);
-            this.txtPwrFiyat.Name = "txtPwrFiyat";
-            this.txtPwrFiyat.Size = new System.Drawing.Size(106, 22);
-            this.txtPwrFiyat.TabIndex = 43;
-            // 
-            // label5
-            // 
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label5.Location = new System.Drawing.Point(136, 308);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(56, 24);
-            this.label5.TabIndex = 42;
-            this.label5.Text = "Fiyat:";
-            // 
-            // txtRainFiyat
-            // 
-            this.txtRainFiyat.Location = new System.Drawing.Point(187, 310);
-            this.txtRainFiyat.Name = "txtRainFiyat";
-            this.txtRainFiyat.Size = new System.Drawing.Size(106, 22);
-            this.txtRainFiyat.TabIndex = 44;
-            // 
-            // label7
-            // 
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label7.Location = new System.Drawing.Point(136, 308);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(56, 24);
-            this.label7.TabIndex = 43;
-            this.label7.Text = "Fiyat:";
-            // 
-            // txtRedFiyat
-            // 
-            this.txtRedFiyat.Location = new System.Drawing.Point(187, 310);
-            this.txtRedFiyat.Name = "txtRedFiyat";
-            this.txtRedFiyat.Size = new System.Drawing.Size(106, 22);
-            this.txtRedFiyat.TabIndex = 44;
-            // 
-            // label9
-            // 
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label9.Location = new System.Drawing.Point(136, 308);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(56, 24);
-            this.label9.TabIndex = 43;
-            this.label9.Text = "Fiyat:";
-            // 
-            // txtSpdFiyat
-            // 
-            this.txtSpdFiyat.Location = new System.Drawing.Point(187, 310);
-            this.txtSpdFiyat.Name = "txtSpdFiyat";
-            this.txtSpdFiyat.Size = new System.Drawing.Size(106, 22);
-            this.txtSpdFiyat.TabIndex = 44;
-            // 
-            // label11
-            // 
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label11.Location = new System.Drawing.Point(136, 308);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(56, 24);
-            this.label11.TabIndex = 43;
-            this.label11.Text = "Fiyat:";
-            // 
-            // txtWinFiyat
-            // 
-            this.txtWinFiyat.Location = new System.Drawing.Point(187, 310);
-            this.txtWinFiyat.Name = "txtWinFiyat";
-            this.txtWinFiyat.Size = new System.Drawing.Size(106, 22);
-            this.txtWinFiyat.TabIndex = 44;
-            // 
-            // label13
-            // 
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label13.Location = new System.Drawing.Point(136, 308);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(56, 24);
-            this.label13.TabIndex = 43;
-            this.label13.Text = "Fiyat:";
-            // 
-            // txtWolfFiyat
-            // 
-            this.txtWolfFiyat.Location = new System.Drawing.Point(187, 310);
-            this.txtWolfFiyat.Name = "txtWolfFiyat";
-            this.txtWolfFiyat.Size = new System.Drawing.Size(106, 22);
-            this.txtWolfFiyat.TabIndex = 44;
-            // 
-            // label15
-            // 
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label15.Location = new System.Drawing.Point(136, 308);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(56, 24);
-            this.label15.TabIndex = 43;
-            this.label15.Text = "Fiyat:";
-            // 
             // AnaEkran
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(988, 568);
+            this.ClientSize = new System.Drawing.Size(741, 462);
             this.Controls.Add(this.mtabCoin);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MaximizeBox = false;
             this.Name = "AnaEkran";
+            this.Padding = new System.Windows.Forms.Padding(15, 49, 15, 16);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.AnaEkran_FormClosed);
             this.Load += new System.EventHandler(this.AnaEkran_Load);
             this.mtabCoin.ResumeLayout(false);
