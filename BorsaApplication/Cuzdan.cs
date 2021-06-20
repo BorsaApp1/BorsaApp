@@ -25,6 +25,7 @@ namespace BorsaApplication
         private void Cuzdan_Load(object sender, EventArgs e)
         {
             ItemGoster();
+
         }
         void ItemGoster()
         {
@@ -33,6 +34,11 @@ namespace BorsaApplication
             DataTable dt = new DataTable();
             da.Fill(dt);
             dgvCuzdan.DataSource = dt;
+        }
+
+        private void btnSatim_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

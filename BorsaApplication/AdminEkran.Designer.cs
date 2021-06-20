@@ -30,7 +30,10 @@ namespace BorsaApplication
         private void InitializeComponent()
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.grpAdmin = new System.Windows.Forms.GroupBox();
             this.mtabControl = new MetroFramework.Controls.MetroTabControl();
             this.mtabPageUrun = new MetroFramework.Controls.MetroTabPage();
@@ -39,7 +42,6 @@ namespace BorsaApplication
             this.UserID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ItemID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ItemAmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ItemPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ItemAccept = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.mtabPara = new MetroFramework.Controls.MetroTabPage();
             this.btnParaEkle = new System.Windows.Forms.Button();
@@ -60,7 +62,7 @@ namespace BorsaApplication
             // 
             this.grpAdmin.Controls.Add(this.mtabControl);
             this.grpAdmin.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.grpAdmin.Location = new System.Drawing.Point(23, 26);
+            this.grpAdmin.Location = new System.Drawing.Point(23, 56);
             this.grpAdmin.Name = "grpAdmin";
             this.grpAdmin.Size = new System.Drawing.Size(1018, 491);
             this.grpAdmin.TabIndex = 0;
@@ -121,13 +123,11 @@ namespace BorsaApplication
             this.UserID,
             this.ItemID,
             this.ItemAmount,
-            this.ItemPrice,
             this.ItemAccept});
             this.dgvUrunKontrol.Cursor = System.Windows.Forms.Cursors.Default;
             this.dgvUrunKontrol.GridColor = System.Drawing.SystemColors.AppWorkspace;
             this.dgvUrunKontrol.Location = new System.Drawing.Point(26, 15);
             this.dgvUrunKontrol.Name = "dgvUrunKontrol";
-            this.dgvUrunKontrol.ReadOnly = true;
             this.dgvUrunKontrol.RowHeadersWidth = 51;
             this.dgvUrunKontrol.RowTemplate.Height = 24;
             this.dgvUrunKontrol.Size = new System.Drawing.Size(935, 291);
@@ -139,7 +139,6 @@ namespace BorsaApplication
             this.UserID.HeaderText = "User ID";
             this.UserID.MinimumWidth = 6;
             this.UserID.Name = "UserID";
-            this.UserID.ReadOnly = true;
             // 
             // ItemID
             // 
@@ -147,23 +146,13 @@ namespace BorsaApplication
             this.ItemID.HeaderText = "Item ID";
             this.ItemID.MinimumWidth = 6;
             this.ItemID.Name = "ItemID";
-            this.ItemID.ReadOnly = true;
             // 
             // ItemAmount
             // 
             this.ItemAmount.DataPropertyName = "ItemAmount";
-            this.ItemAmount.HeaderText = "Item Amount";
+            this.ItemAmount.HeaderText = "ItemAmount";
             this.ItemAmount.MinimumWidth = 6;
             this.ItemAmount.Name = "ItemAmount";
-            this.ItemAmount.ReadOnly = true;
-            // 
-            // ItemPrice
-            // 
-            this.ItemPrice.DataPropertyName = "ItemPrice";
-            this.ItemPrice.HeaderText = "ItemPrice";
-            this.ItemPrice.MinimumWidth = 6;
-            this.ItemPrice.Name = "ItemPrice";
-            this.ItemPrice.ReadOnly = true;
             // 
             // ItemAccept
             // 
@@ -171,12 +160,12 @@ namespace BorsaApplication
             this.ItemAccept.HeaderText = "Item Accept";
             this.ItemAccept.MinimumWidth = 6;
             this.ItemAccept.Name = "ItemAccept";
-            this.ItemAccept.ReadOnly = true;
             // 
             // mtabPara
             // 
             this.mtabPara.Controls.Add(this.btnParaEkle);
             this.mtabPara.Controls.Add(this.dgvParaKontrol);
+            this.mtabPara.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.mtabPara.HorizontalScrollbarBarColor = true;
             this.mtabPara.HorizontalScrollbarHighlightOnWheel = false;
             this.mtabPara.HorizontalScrollbarSize = 10;
@@ -208,14 +197,6 @@ namespace BorsaApplication
             this.dgvParaKontrol.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvParaKontrol.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
             this.dgvParaKontrol.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvParaKontrol.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvParaKontrol.ColumnHeadersHeight = 29;
             this.dgvParaKontrol.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.UserID1,
@@ -225,8 +206,9 @@ namespace BorsaApplication
             this.dgvParaKontrol.GridColor = System.Drawing.SystemColors.AppWorkspace;
             this.dgvParaKontrol.Location = new System.Drawing.Point(26, 15);
             this.dgvParaKontrol.Name = "dgvParaKontrol";
-            this.dgvParaKontrol.ReadOnly = true;
             this.dgvParaKontrol.RowHeadersWidth = 51;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.dgvParaKontrol.RowsDefaultCellStyle = dataGridViewCellStyle5;
             this.dgvParaKontrol.RowTemplate.Height = 24;
             this.dgvParaKontrol.Size = new System.Drawing.Size(935, 291);
             this.dgvParaKontrol.TabIndex = 5;
@@ -234,6 +216,8 @@ namespace BorsaApplication
             // UserID1
             // 
             this.UserID1.DataPropertyName = "UserID";
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.UserID1.DefaultCellStyle = dataGridViewCellStyle2;
             this.UserID1.HeaderText = "User ID";
             this.UserID1.MinimumWidth = 6;
             this.UserID1.Name = "UserID1";
@@ -243,6 +227,8 @@ namespace BorsaApplication
             // MoneyAmount
             // 
             this.MoneyAmount.DataPropertyName = "MoneyAmount";
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.MoneyAmount.DefaultCellStyle = dataGridViewCellStyle3;
             this.MoneyAmount.HeaderText = "Money Amount";
             this.MoneyAmount.MinimumWidth = 6;
             this.MoneyAmount.Name = "MoneyAmount";
@@ -252,6 +238,8 @@ namespace BorsaApplication
             // MoneyAccept
             // 
             this.MoneyAccept.DataPropertyName = "MoneyAccept";
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.MoneyAccept.DefaultCellStyle = dataGridViewCellStyle4;
             this.MoneyAccept.HeaderText = "Money Accept";
             this.MoneyAccept.MinimumWidth = 6;
             this.MoneyAccept.Name = "MoneyAccept";
@@ -262,7 +250,7 @@ namespace BorsaApplication
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1057, 546);
+            this.ClientSize = new System.Drawing.Size(1095, 570);
             this.Controls.Add(this.grpAdmin);
             this.Name = "AdminEkran";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.AdminEkran_FormClosed);
@@ -283,11 +271,6 @@ namespace BorsaApplication
         private MetroFramework.Controls.MetroTabPage mtabPageUrun;
         private System.Windows.Forms.Button btnCoinEkle;
         private System.Windows.Forms.DataGridView dgvUrunKontrol;
-        private System.Windows.Forms.DataGridViewTextBoxColumn UserID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ItemID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ItemAmount;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ItemPrice;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ItemAccept;
         private MetroFramework.Controls.MetroTabPage mtabPara;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.Button btnParaEkle;
@@ -295,5 +278,9 @@ namespace BorsaApplication
         private System.Windows.Forms.DataGridViewTextBoxColumn UserID1;
         private System.Windows.Forms.DataGridViewTextBoxColumn MoneyAmount;
         private System.Windows.Forms.DataGridViewTextBoxColumn MoneyAccept;
+        private System.Windows.Forms.DataGridViewTextBoxColumn UserID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ItemID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ItemAmount;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ItemAccept;
     }
 }

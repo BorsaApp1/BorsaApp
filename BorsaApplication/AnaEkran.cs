@@ -76,9 +76,9 @@ namespace BorsaApplication
             }
         }
 
-        public void Satis(int ItemID,TextBox txt,DataGridView data)
+        public void Satis(int ItemID,TextBox txt,TextBox txt1,DataGridView data)
         {
-            SqlCommand komut = new SqlCommand("Execute Satis " + ItemID + "," + "'" + kullaniciAdi + "'" + "," + txt.Text, sqlbaglanti.baglanti());
+            SqlCommand komut = new SqlCommand("Execute Satis "+ItemID+","+"'"+kullaniciAdi+"'"+","+txt.Text+","+txt1.Text, sqlbaglanti.baglanti());
             komut.ExecuteNonQuery();                       /*Satıs queryisini calistirip alim islemi gercekletiriyor.*/
             Ekle("Execute ItemGoster " + ItemID, data);    //datagridview i yeniden guncelliyor
             sqlbaglanti.baglanti().Close();
@@ -165,42 +165,47 @@ namespace BorsaApplication
 
         private void btnAlımBattery_Click(object sender, EventArgs e)
         {
-            Satis(1, txtMiktarBattery, dgvBattery);    
+            Satis(1, txtBtryFiyat, txtMiktarBattery, dgvBattery);    
         }
 
         private void btnAlımBig_Click(object sender, EventArgs e)
         {
-            Satis(2, txtMiktarBig, dgvBig);
+            Satis(2, txtBigFiyat, txtMiktarBig, dgvBig);
         }
 
         private void btnAlımPower_Click(object sender, EventArgs e)
         {
-            Satis(3, txtMiktarPower, dgvPower);
+            Satis(3,  txtPwrFiyat, txtMiktarPower, dgvPower);
         }
 
         private void btnAlımRain_Click(object sender, EventArgs e)
         {
-            Satis(4, txtMiktarRain, dgvRain);
+            Satis(4, txtRainFiyat, txtMiktarRain, dgvRain);
         }
 
         private void btnAlımRed_Click(object sender, EventArgs e)
         {
-            Satis(5, txtMiktarRed, dgvRed);
+            Satis(5, txtRedFiyat, txtMiktarRed, dgvRed);
         }
 
         private void btnAlımSpeed_Click(object sender, EventArgs e)
         {
-            Satis(6, txtMiktarSpeed, dgvSpeed);
+            Satis(6, txtSpdFiyat , txtMiktarSpeed, dgvSpeed);
         }
 
         private void btnAlımWin_Click(object sender, EventArgs e)
         {
-            Satis(7, txtMiktarWin, dgvWin);
+            Satis(7,  txtWinFiyat, txtMiktarWin, dgvWin);
         }
 
         private void btnAlımWolf_Click(object sender, EventArgs e)
         {
-            Satis(8, txtMiktarWolf, dgvWolf);
+            Satis(8,  txtWolfFiyat, txtMiktarWolf, dgvWolf);
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

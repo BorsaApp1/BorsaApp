@@ -30,21 +30,21 @@ namespace BorsaApplication
         private void InitializeComponent()
         {
             this.grpUrunEkle = new System.Windows.Forms.GroupBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.cmbCoin = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.txtCoinMiktar = new System.Windows.Forms.TextBox();
             this.btnCoinEkle = new System.Windows.Forms.Button();
-            this.cmbCoin = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtSatisFiyat = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.txtFiyat = new System.Windows.Forms.TextBox();
             this.grpUrunEkle.SuspendLayout();
             this.SuspendLayout();
             // 
             // grpUrunEkle
             // 
             this.grpUrunEkle.BackColor = System.Drawing.Color.AliceBlue;
+            this.grpUrunEkle.Controls.Add(this.txtFiyat);
             this.grpUrunEkle.Controls.Add(this.label3);
-            this.grpUrunEkle.Controls.Add(this.txtSatisFiyat);
             this.grpUrunEkle.Controls.Add(this.label2);
             this.grpUrunEkle.Controls.Add(this.cmbCoin);
             this.grpUrunEkle.Controls.Add(this.label1);
@@ -52,15 +52,32 @@ namespace BorsaApplication
             this.grpUrunEkle.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.grpUrunEkle.Location = new System.Drawing.Point(11, 24);
             this.grpUrunEkle.Name = "grpUrunEkle";
-            this.grpUrunEkle.Size = new System.Drawing.Size(420, 330);
+            this.grpUrunEkle.Size = new System.Drawing.Size(420, 193);
             this.grpUrunEkle.TabIndex = 32;
             this.grpUrunEkle.TabStop = false;
             this.grpUrunEkle.Text = "ÜRÜN EKLEME";
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(119, 34);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(55, 24);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Coin:";
+            // 
+            // cmbCoin
+            // 
+            this.cmbCoin.FormattingEnabled = true;
+            this.cmbCoin.Location = new System.Drawing.Point(180, 31);
+            this.cmbCoin.Name = "cmbCoin";
+            this.cmbCoin.Size = new System.Drawing.Size(144, 32);
+            this.cmbCoin.TabIndex = 2;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(36, 149);
+            this.label1.Location = new System.Drawing.Point(53, 87);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(121, 24);
             this.label1.TabIndex = 1;
@@ -68,7 +85,7 @@ namespace BorsaApplication
             // 
             // txtCoinMiktar
             // 
-            this.txtCoinMiktar.Location = new System.Drawing.Point(163, 146);
+            this.txtCoinMiktar.Location = new System.Drawing.Point(180, 84);
             this.txtCoinMiktar.Name = "txtCoinMiktar";
             this.txtCoinMiktar.Size = new System.Drawing.Size(144, 32);
             this.txtCoinMiktar.TabIndex = 0;
@@ -77,7 +94,7 @@ namespace BorsaApplication
             // 
             this.btnCoinEkle.BackColor = System.Drawing.Color.Lime;
             this.btnCoinEkle.Font = new System.Drawing.Font("Elephant", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCoinEkle.Location = new System.Drawing.Point(106, 360);
+            this.btnCoinEkle.Location = new System.Drawing.Point(106, 253);
             this.btnCoinEkle.Name = "btnCoinEkle";
             this.btnCoinEkle.Size = new System.Drawing.Size(212, 54);
             this.btnCoinEkle.TabIndex = 33;
@@ -85,44 +102,27 @@ namespace BorsaApplication
             this.btnCoinEkle.UseVisualStyleBackColor = false;
             this.btnCoinEkle.Click += new System.EventHandler(this.btnCoinEkle_Click);
             // 
-            // cmbCoin
-            // 
-            this.cmbCoin.FormattingEnabled = true;
-            this.cmbCoin.Location = new System.Drawing.Point(163, 77);
-            this.cmbCoin.Name = "cmbCoin";
-            this.cmbCoin.Size = new System.Drawing.Size(144, 32);
-            this.cmbCoin.TabIndex = 2;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(102, 80);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(55, 24);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Coin:";
-            // 
-            // txtSatisFiyat
-            // 
-            this.txtSatisFiyat.Location = new System.Drawing.Point(163, 209);
-            this.txtSatisFiyat.Name = "txtSatisFiyat";
-            this.txtSatisFiyat.Size = new System.Drawing.Size(144, 32);
-            this.txtSatisFiyat.TabIndex = 4;
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(46, 212);
+            this.label3.Location = new System.Drawing.Point(67, 140);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(111, 24);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Satış Fiyatı:";
+            this.label3.Size = new System.Drawing.Size(107, 24);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Coin Fiyatı:";
+            // 
+            // txtFiyat
+            // 
+            this.txtFiyat.Location = new System.Drawing.Point(180, 137);
+            this.txtFiyat.Name = "txtFiyat";
+            this.txtFiyat.Size = new System.Drawing.Size(144, 32);
+            this.txtFiyat.TabIndex = 5;
             // 
             // CoinEkle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(444, 354);
             this.Controls.Add(this.grpUrunEkle);
             this.Controls.Add(this.btnCoinEkle);
             this.Name = "CoinEkle";
@@ -141,7 +141,7 @@ namespace BorsaApplication
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtCoinMiktar;
         private System.Windows.Forms.Button btnCoinEkle;
+        private System.Windows.Forms.TextBox txtFiyat;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtSatisFiyat;
     }
 }

@@ -47,11 +47,9 @@ namespace BorsaApplication
         {
             string userID;
             int ItemID;
-            decimal ItemPrice;
             userID=dgvUrunKontrol.CurrentRow.Cells["UserID"].Value.ToString(); //sisteme coin yukleyen kullanicinin id sini tutuyor.
             ItemID = Convert.ToInt32(dgvUrunKontrol.CurrentRow.Cells["ItemID"].Value);//hangi coin i yukledigini tutuyor.
-            ItemPrice = Convert.ToDecimal(dgvUrunKontrol.CurrentRow.Cells["ItemPrice"].Value);//kac tl den yukeldigini tutuyor
-            SqlCommand komut = new SqlCommand("Execute Onay " +"'"+userID+"'"+","+ItemID +","+ItemPrice ,baglanti.baglanti());
+            SqlCommand komut = new SqlCommand("Execute Onay " +"'"+userID+"'"+","+ItemID , baglanti.baglanti());
             komut.ExecuteNonQuery();      //Admin onay kismi.
             CoinGoster();
             baglanti.baglanti().Close();

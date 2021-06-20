@@ -34,7 +34,7 @@ namespace BorsaApplication
                 itemid = Convert.ToInt32(dataReader["ItemID"]);
                 itemName = dataReader["ItemName"].ToString();
             }
-            SqlCommand komut = new SqlCommand("Execute ItemEkleme "+"'"+userid1+"'"+","+itemid+","+"'"+itemName+"'"+","+txtCoinMiktar.Text+","+txtSatisFiyat.Text, baglanti.baglanti());
+            SqlCommand komut = new SqlCommand("Execute ItemEkleme "+"'"+userid1+"'"+","+itemid+","+"'"+itemName+"'"+","+txtCoinMiktar.Text+","+txtFiyat.Text, baglanti.baglanti());
             komut.ExecuteNonQuery();                         //ItemEkleme procedure ile admine gonderilmek uzere sisteme coin ekleniyor.
             MessageBox.Show("Onay için bekleniyor");
             baglanti.baglanti().Close();

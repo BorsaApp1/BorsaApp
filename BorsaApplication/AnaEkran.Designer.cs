@@ -39,6 +39,12 @@ namespace BorsaApplication
             this.label1 = new System.Windows.Forms.Label();
             this.btnAlımBattery = new System.Windows.Forms.Button();
             this.dgvBattery = new System.Windows.Forms.DataGridView();
+            this.BatteryUserID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.BatteryUserName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.BatteryItemName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.BatteryItemAmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.BatteryItemPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.BtryDateOfPurchase = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.BigPage = new System.Windows.Forms.TabPage();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.lblParaBig = new System.Windows.Forms.Label();
@@ -46,6 +52,12 @@ namespace BorsaApplication
             this.label4 = new System.Windows.Forms.Label();
             this.btnAlımBig = new System.Windows.Forms.Button();
             this.dgvBig = new System.Windows.Forms.DataGridView();
+            this.BigUserID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.BigUserName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.BigItemName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.BigItemAmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.BigItemPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bgDateOfPurchase = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PowerPage = new System.Windows.Forms.TabPage();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.lblParaPower = new System.Windows.Forms.Label();
@@ -53,6 +65,12 @@ namespace BorsaApplication
             this.label6 = new System.Windows.Forms.Label();
             this.btnAlımPower = new System.Windows.Forms.Button();
             this.dgvPower = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PowerItemName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pwrDateOfPurchase = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.RainPage = new System.Windows.Forms.TabPage();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.lblparaRain = new System.Windows.Forms.Label();
@@ -60,6 +78,12 @@ namespace BorsaApplication
             this.label8 = new System.Windows.Forms.Label();
             this.btnAlımRain = new System.Windows.Forms.Button();
             this.dgvRain = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.RainItemName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.RnDateOfPurchase = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.RedPage = new System.Windows.Forms.TabPage();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.lblParaRed = new System.Windows.Forms.Label();
@@ -67,6 +91,12 @@ namespace BorsaApplication
             this.label10 = new System.Windows.Forms.Label();
             this.btnAlımRed = new System.Windows.Forms.Button();
             this.dgvRed = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.RedItemName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.rdDateOfPurchase = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SpeedPage = new System.Windows.Forms.TabPage();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.lblParaSpeed = new System.Windows.Forms.Label();
@@ -74,6 +104,12 @@ namespace BorsaApplication
             this.label12 = new System.Windows.Forms.Label();
             this.btnAlımSpeed = new System.Windows.Forms.Button();
             this.dgvSpeed = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SpeedItemName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.spdDateOfPurchase = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.WinPage = new System.Windows.Forms.TabPage();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.lblParaWin = new System.Windows.Forms.Label();
@@ -81,6 +117,12 @@ namespace BorsaApplication
             this.label14 = new System.Windows.Forms.Label();
             this.btnAlımWin = new System.Windows.Forms.Button();
             this.dgvWin = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.WinItemName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn19 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn20 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.wnDateOfPurchase = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.WolfPage = new System.Windows.Forms.TabPage();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.lblParaWolf = new System.Windows.Forms.Label();
@@ -88,6 +130,12 @@ namespace BorsaApplication
             this.label16 = new System.Windows.Forms.Label();
             this.btnAlımWolf = new System.Windows.Forms.Button();
             this.dgvWolf = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn21 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn22 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.WolfItemName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn23 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn24 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.wlfDateOfPurchase = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Anapage = new MetroFramework.Controls.MetroTabPage();
             this.btnCuzdan = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -100,46 +148,22 @@ namespace BorsaApplication
             this.tbl_UserItemsTableAdapter = new BorsaApplication.StockMarketDataDataSetTableAdapters.Tbl_UserItemsTableAdapter();
             this.stockMarketDataDataSet1 = new BorsaApplication.StockMarketDataDataSet();
             this.tblItemsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.BatteryUserID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.BatteryUserName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.BatteryItemName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.BatteryItemAmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.BatteryItemPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.BigUserID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.BigUserName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.BigItemName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.BigItemAmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.BigItemPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PowerItemName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.RainItemName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.RedItemName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SpeedItemName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.WinItemName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn19 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn20 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn21 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn22 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.WolfItemName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn23 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn24 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtBtryFiyat = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtBigFiyat = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtPwrFiyat = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtRainFiyat = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.txtRedFiyat = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.txtSpdFiyat = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.txtWinFiyat = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.txtWolfFiyat = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
             this.mtabCoin.SuspendLayout();
             this.BatteryPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -190,7 +214,7 @@ namespace BorsaApplication
             this.mtabCoin.Location = new System.Drawing.Point(0, 28);
             this.mtabCoin.Multiline = true;
             this.mtabCoin.Name = "mtabCoin";
-            this.mtabCoin.SelectedIndex = 7;
+            this.mtabCoin.SelectedIndex = 0;
             this.mtabCoin.Size = new System.Drawing.Size(989, 534);
             this.mtabCoin.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.mtabCoin.TabIndex = 0;
@@ -200,6 +224,8 @@ namespace BorsaApplication
             // 
             this.BatteryPage.BackColor = System.Drawing.Color.BlanchedAlmond;
             this.BatteryPage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BatteryPage.Controls.Add(this.txtBtryFiyat);
+            this.BatteryPage.Controls.Add(this.label2);
             this.BatteryPage.Controls.Add(this.pictureBox2);
             this.BatteryPage.Controls.Add(this.lblParaBattery);
             this.BatteryPage.Controls.Add(this.txtMiktarBattery);
@@ -275,7 +301,8 @@ namespace BorsaApplication
             this.BatteryUserName,
             this.BatteryItemName,
             this.BatteryItemAmount,
-            this.BatteryItemPrice});
+            this.BatteryItemPrice,
+            this.BtryDateOfPurchase});
             this.dgvBattery.Cursor = System.Windows.Forms.Cursors.Default;
             this.dgvBattery.GridColor = System.Drawing.SystemColors.AppWorkspace;
             this.dgvBattery.Location = new System.Drawing.Point(3, 3);
@@ -287,18 +314,68 @@ namespace BorsaApplication
             this.dgvBattery.Size = new System.Drawing.Size(975, 302);
             this.dgvBattery.TabIndex = 0;
             // 
+            // BatteryUserID
+            // 
+            this.BatteryUserID.DataPropertyName = "UserID";
+            this.BatteryUserID.HeaderText = "User ID";
+            this.BatteryUserID.MinimumWidth = 6;
+            this.BatteryUserID.Name = "BatteryUserID";
+            this.BatteryUserID.ReadOnly = true;
+            // 
+            // BatteryUserName
+            // 
+            this.BatteryUserName.DataPropertyName = "UserName";
+            this.BatteryUserName.HeaderText = "User Name";
+            this.BatteryUserName.MinimumWidth = 6;
+            this.BatteryUserName.Name = "BatteryUserName";
+            this.BatteryUserName.ReadOnly = true;
+            // 
+            // BatteryItemName
+            // 
+            this.BatteryItemName.DataPropertyName = "ItemName";
+            this.BatteryItemName.HeaderText = "Item Name";
+            this.BatteryItemName.MinimumWidth = 6;
+            this.BatteryItemName.Name = "BatteryItemName";
+            this.BatteryItemName.ReadOnly = true;
+            // 
+            // BatteryItemAmount
+            // 
+            this.BatteryItemAmount.DataPropertyName = "ItemAmount";
+            this.BatteryItemAmount.HeaderText = "Item Amount";
+            this.BatteryItemAmount.MinimumWidth = 6;
+            this.BatteryItemAmount.Name = "BatteryItemAmount";
+            this.BatteryItemAmount.ReadOnly = true;
+            // 
+            // BatteryItemPrice
+            // 
+            this.BatteryItemPrice.DataPropertyName = "ItemPrice";
+            this.BatteryItemPrice.HeaderText = "Item Price";
+            this.BatteryItemPrice.MinimumWidth = 6;
+            this.BatteryItemPrice.Name = "BatteryItemPrice";
+            this.BatteryItemPrice.ReadOnly = true;
+            // 
+            // BtryDateOfPurchase
+            // 
+            this.BtryDateOfPurchase.DataPropertyName = "DateOfPurchase";
+            this.BtryDateOfPurchase.HeaderText = "Date";
+            this.BtryDateOfPurchase.MinimumWidth = 6;
+            this.BtryDateOfPurchase.Name = "BtryDateOfPurchase";
+            this.BtryDateOfPurchase.ReadOnly = true;
+            // 
             // BigPage
             // 
             this.BigPage.BackColor = System.Drawing.Color.BlanchedAlmond;
+            this.BigPage.Controls.Add(this.txtBigFiyat);
+            this.BigPage.Controls.Add(this.label3);
             this.BigPage.Controls.Add(this.pictureBox3);
             this.BigPage.Controls.Add(this.lblParaBig);
             this.BigPage.Controls.Add(this.txtMiktarBig);
             this.BigPage.Controls.Add(this.label4);
             this.BigPage.Controls.Add(this.btnAlımBig);
             this.BigPage.Controls.Add(this.dgvBig);
-            this.BigPage.Location = new System.Drawing.Point(4, 44);
+            this.BigPage.Location = new System.Drawing.Point(4, 84);
             this.BigPage.Name = "BigPage";
-            this.BigPage.Size = new System.Drawing.Size(981, 486);
+            this.BigPage.Size = new System.Drawing.Size(981, 446);
             this.BigPage.TabIndex = 1;
             this.BigPage.Tag = "";
             this.BigPage.Text = "  Big Coin";
@@ -365,7 +442,8 @@ namespace BorsaApplication
             this.BigUserName,
             this.BigItemName,
             this.BigItemAmount,
-            this.BigItemPrice});
+            this.BigItemPrice,
+            this.bgDateOfPurchase});
             this.dgvBig.Cursor = System.Windows.Forms.Cursors.Default;
             this.dgvBig.GridColor = System.Drawing.SystemColors.AppWorkspace;
             this.dgvBig.Location = new System.Drawing.Point(3, 3);
@@ -376,9 +454,54 @@ namespace BorsaApplication
             this.dgvBig.Size = new System.Drawing.Size(975, 302);
             this.dgvBig.TabIndex = 1;
             // 
+            // BigUserID
+            // 
+            this.BigUserID.DataPropertyName = "UserID";
+            this.BigUserID.HeaderText = "User ID";
+            this.BigUserID.MinimumWidth = 6;
+            this.BigUserID.Name = "BigUserID";
+            // 
+            // BigUserName
+            // 
+            this.BigUserName.DataPropertyName = "UserName";
+            this.BigUserName.HeaderText = "User Name";
+            this.BigUserName.MinimumWidth = 6;
+            this.BigUserName.Name = "BigUserName";
+            // 
+            // BigItemName
+            // 
+            this.BigItemName.DataPropertyName = "ItemName";
+            this.BigItemName.HeaderText = "Item Name";
+            this.BigItemName.MinimumWidth = 6;
+            this.BigItemName.Name = "BigItemName";
+            this.BigItemName.ReadOnly = true;
+            // 
+            // BigItemAmount
+            // 
+            this.BigItemAmount.DataPropertyName = "ItemAmount";
+            this.BigItemAmount.HeaderText = "Item Amount";
+            this.BigItemAmount.MinimumWidth = 6;
+            this.BigItemAmount.Name = "BigItemAmount";
+            // 
+            // BigItemPrice
+            // 
+            this.BigItemPrice.DataPropertyName = "ItemPrice";
+            this.BigItemPrice.HeaderText = "Item Price";
+            this.BigItemPrice.MinimumWidth = 6;
+            this.BigItemPrice.Name = "BigItemPrice";
+            // 
+            // bgDateOfPurchase
+            // 
+            this.bgDateOfPurchase.DataPropertyName = "DateOfPurchase";
+            this.bgDateOfPurchase.HeaderText = "Date";
+            this.bgDateOfPurchase.MinimumWidth = 6;
+            this.bgDateOfPurchase.Name = "bgDateOfPurchase";
+            // 
             // PowerPage
             // 
             this.PowerPage.BackColor = System.Drawing.Color.BlanchedAlmond;
+            this.PowerPage.Controls.Add(this.txtPwrFiyat);
+            this.PowerPage.Controls.Add(this.label5);
             this.PowerPage.Controls.Add(this.pictureBox4);
             this.PowerPage.Controls.Add(this.lblParaPower);
             this.PowerPage.Controls.Add(this.txtMiktarPower);
@@ -453,7 +576,8 @@ namespace BorsaApplication
             this.dataGridViewTextBoxColumn2,
             this.PowerItemName,
             this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4});
+            this.dataGridViewTextBoxColumn4,
+            this.pwrDateOfPurchase});
             this.dgvPower.Cursor = System.Windows.Forms.Cursors.Default;
             this.dgvPower.GridColor = System.Drawing.SystemColors.AppWorkspace;
             this.dgvPower.Location = new System.Drawing.Point(3, 3);
@@ -465,9 +589,59 @@ namespace BorsaApplication
             this.dgvPower.Size = new System.Drawing.Size(975, 302);
             this.dgvPower.TabIndex = 36;
             // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "UserID";
+            this.dataGridViewTextBoxColumn1.HeaderText = "User ID";
+            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "UserName";
+            this.dataGridViewTextBoxColumn2.HeaderText = "User Name";
+            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            // 
+            // PowerItemName
+            // 
+            this.PowerItemName.DataPropertyName = "ItemName";
+            this.PowerItemName.HeaderText = "Item Name";
+            this.PowerItemName.MinimumWidth = 6;
+            this.PowerItemName.Name = "PowerItemName";
+            this.PowerItemName.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "ItemAmount";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Item Amount";
+            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "ItemPrice";
+            this.dataGridViewTextBoxColumn4.HeaderText = "Item Price";
+            this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.ReadOnly = true;
+            // 
+            // pwrDateOfPurchase
+            // 
+            this.pwrDateOfPurchase.DataPropertyName = "DateOfPurchase";
+            this.pwrDateOfPurchase.HeaderText = "Date";
+            this.pwrDateOfPurchase.MinimumWidth = 6;
+            this.pwrDateOfPurchase.Name = "pwrDateOfPurchase";
+            this.pwrDateOfPurchase.ReadOnly = true;
+            // 
             // RainPage
             // 
             this.RainPage.BackColor = System.Drawing.Color.BlanchedAlmond;
+            this.RainPage.Controls.Add(this.txtRainFiyat);
+            this.RainPage.Controls.Add(this.label7);
             this.RainPage.Controls.Add(this.pictureBox5);
             this.RainPage.Controls.Add(this.lblparaRain);
             this.RainPage.Controls.Add(this.txtMiktarRain);
@@ -542,7 +716,8 @@ namespace BorsaApplication
             this.dataGridViewTextBoxColumn6,
             this.RainItemName,
             this.dataGridViewTextBoxColumn7,
-            this.dataGridViewTextBoxColumn8});
+            this.dataGridViewTextBoxColumn8,
+            this.RnDateOfPurchase});
             this.dgvRain.Cursor = System.Windows.Forms.Cursors.Default;
             this.dgvRain.GridColor = System.Drawing.SystemColors.AppWorkspace;
             this.dgvRain.Location = new System.Drawing.Point(3, 3);
@@ -554,9 +729,59 @@ namespace BorsaApplication
             this.dgvRain.Size = new System.Drawing.Size(975, 302);
             this.dgvRain.TabIndex = 37;
             // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "UserID";
+            this.dataGridViewTextBoxColumn5.HeaderText = "User ID";
+            this.dataGridViewTextBoxColumn5.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.DataPropertyName = "UserName";
+            this.dataGridViewTextBoxColumn6.HeaderText = "User Name";
+            this.dataGridViewTextBoxColumn6.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            this.dataGridViewTextBoxColumn6.ReadOnly = true;
+            // 
+            // RainItemName
+            // 
+            this.RainItemName.DataPropertyName = "ItemName";
+            this.RainItemName.HeaderText = "Item Name";
+            this.RainItemName.MinimumWidth = 6;
+            this.RainItemName.Name = "RainItemName";
+            this.RainItemName.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.DataPropertyName = "ItemAmount";
+            this.dataGridViewTextBoxColumn7.HeaderText = "Item Amount";
+            this.dataGridViewTextBoxColumn7.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            this.dataGridViewTextBoxColumn7.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            this.dataGridViewTextBoxColumn8.DataPropertyName = "ItemPrice";
+            this.dataGridViewTextBoxColumn8.HeaderText = "Item Price";
+            this.dataGridViewTextBoxColumn8.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            this.dataGridViewTextBoxColumn8.ReadOnly = true;
+            // 
+            // RnDateOfPurchase
+            // 
+            this.RnDateOfPurchase.DataPropertyName = "DateOfPurchase";
+            this.RnDateOfPurchase.HeaderText = "Date";
+            this.RnDateOfPurchase.MinimumWidth = 6;
+            this.RnDateOfPurchase.Name = "RnDateOfPurchase";
+            this.RnDateOfPurchase.ReadOnly = true;
+            // 
             // RedPage
             // 
             this.RedPage.BackColor = System.Drawing.Color.BlanchedAlmond;
+            this.RedPage.Controls.Add(this.txtRedFiyat);
+            this.RedPage.Controls.Add(this.label9);
             this.RedPage.Controls.Add(this.pictureBox6);
             this.RedPage.Controls.Add(this.lblParaRed);
             this.RedPage.Controls.Add(this.txtMiktarRed);
@@ -631,7 +856,8 @@ namespace BorsaApplication
             this.dataGridViewTextBoxColumn10,
             this.RedItemName,
             this.dataGridViewTextBoxColumn11,
-            this.dataGridViewTextBoxColumn12});
+            this.dataGridViewTextBoxColumn12,
+            this.rdDateOfPurchase});
             this.dgvRed.Cursor = System.Windows.Forms.Cursors.Default;
             this.dgvRed.GridColor = System.Drawing.SystemColors.AppWorkspace;
             this.dgvRed.Location = new System.Drawing.Point(3, 3);
@@ -643,9 +869,59 @@ namespace BorsaApplication
             this.dgvRed.Size = new System.Drawing.Size(975, 302);
             this.dgvRed.TabIndex = 37;
             // 
+            // dataGridViewTextBoxColumn9
+            // 
+            this.dataGridViewTextBoxColumn9.DataPropertyName = "UserID";
+            this.dataGridViewTextBoxColumn9.HeaderText = "User ID";
+            this.dataGridViewTextBoxColumn9.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
+            this.dataGridViewTextBoxColumn9.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn10
+            // 
+            this.dataGridViewTextBoxColumn10.DataPropertyName = "UserName";
+            this.dataGridViewTextBoxColumn10.HeaderText = "User Name";
+            this.dataGridViewTextBoxColumn10.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
+            this.dataGridViewTextBoxColumn10.ReadOnly = true;
+            // 
+            // RedItemName
+            // 
+            this.RedItemName.DataPropertyName = "ItemName";
+            this.RedItemName.HeaderText = "Item Name";
+            this.RedItemName.MinimumWidth = 6;
+            this.RedItemName.Name = "RedItemName";
+            this.RedItemName.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn11
+            // 
+            this.dataGridViewTextBoxColumn11.DataPropertyName = "ItemAmount";
+            this.dataGridViewTextBoxColumn11.HeaderText = "Item Amount";
+            this.dataGridViewTextBoxColumn11.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
+            this.dataGridViewTextBoxColumn11.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn12
+            // 
+            this.dataGridViewTextBoxColumn12.DataPropertyName = "ItemPrice";
+            this.dataGridViewTextBoxColumn12.HeaderText = "Item Price";
+            this.dataGridViewTextBoxColumn12.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
+            this.dataGridViewTextBoxColumn12.ReadOnly = true;
+            // 
+            // rdDateOfPurchase
+            // 
+            this.rdDateOfPurchase.DataPropertyName = "DateOfPurchase";
+            this.rdDateOfPurchase.HeaderText = "Date";
+            this.rdDateOfPurchase.MinimumWidth = 6;
+            this.rdDateOfPurchase.Name = "rdDateOfPurchase";
+            this.rdDateOfPurchase.ReadOnly = true;
+            // 
             // SpeedPage
             // 
             this.SpeedPage.BackColor = System.Drawing.Color.BlanchedAlmond;
+            this.SpeedPage.Controls.Add(this.txtSpdFiyat);
+            this.SpeedPage.Controls.Add(this.label11);
             this.SpeedPage.Controls.Add(this.pictureBox7);
             this.SpeedPage.Controls.Add(this.lblParaSpeed);
             this.SpeedPage.Controls.Add(this.txtMiktarSpeed);
@@ -720,7 +996,8 @@ namespace BorsaApplication
             this.dataGridViewTextBoxColumn14,
             this.SpeedItemName,
             this.dataGridViewTextBoxColumn15,
-            this.dataGridViewTextBoxColumn16});
+            this.dataGridViewTextBoxColumn16,
+            this.spdDateOfPurchase});
             this.dgvSpeed.Cursor = System.Windows.Forms.Cursors.Default;
             this.dgvSpeed.GridColor = System.Drawing.SystemColors.AppWorkspace;
             this.dgvSpeed.Location = new System.Drawing.Point(3, 3);
@@ -732,9 +1009,59 @@ namespace BorsaApplication
             this.dgvSpeed.Size = new System.Drawing.Size(975, 302);
             this.dgvSpeed.TabIndex = 37;
             // 
+            // dataGridViewTextBoxColumn13
+            // 
+            this.dataGridViewTextBoxColumn13.DataPropertyName = "UserID";
+            this.dataGridViewTextBoxColumn13.HeaderText = "User ID";
+            this.dataGridViewTextBoxColumn13.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
+            this.dataGridViewTextBoxColumn13.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn14
+            // 
+            this.dataGridViewTextBoxColumn14.DataPropertyName = "UserName";
+            this.dataGridViewTextBoxColumn14.HeaderText = "User Name";
+            this.dataGridViewTextBoxColumn14.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn14.Name = "dataGridViewTextBoxColumn14";
+            this.dataGridViewTextBoxColumn14.ReadOnly = true;
+            // 
+            // SpeedItemName
+            // 
+            this.SpeedItemName.DataPropertyName = "ItemName";
+            this.SpeedItemName.HeaderText = "Item Name";
+            this.SpeedItemName.MinimumWidth = 6;
+            this.SpeedItemName.Name = "SpeedItemName";
+            this.SpeedItemName.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn15
+            // 
+            this.dataGridViewTextBoxColumn15.DataPropertyName = "ItemAmount";
+            this.dataGridViewTextBoxColumn15.HeaderText = "Item Amount";
+            this.dataGridViewTextBoxColumn15.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn15.Name = "dataGridViewTextBoxColumn15";
+            this.dataGridViewTextBoxColumn15.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn16
+            // 
+            this.dataGridViewTextBoxColumn16.DataPropertyName = "ItemPrice";
+            this.dataGridViewTextBoxColumn16.HeaderText = "Item Price";
+            this.dataGridViewTextBoxColumn16.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn16.Name = "dataGridViewTextBoxColumn16";
+            this.dataGridViewTextBoxColumn16.ReadOnly = true;
+            // 
+            // spdDateOfPurchase
+            // 
+            this.spdDateOfPurchase.DataPropertyName = "DateOfPurchase";
+            this.spdDateOfPurchase.HeaderText = "Date";
+            this.spdDateOfPurchase.MinimumWidth = 6;
+            this.spdDateOfPurchase.Name = "spdDateOfPurchase";
+            this.spdDateOfPurchase.ReadOnly = true;
+            // 
             // WinPage
             // 
             this.WinPage.BackColor = System.Drawing.Color.BlanchedAlmond;
+            this.WinPage.Controls.Add(this.txtWinFiyat);
+            this.WinPage.Controls.Add(this.label13);
             this.WinPage.Controls.Add(this.pictureBox8);
             this.WinPage.Controls.Add(this.lblParaWin);
             this.WinPage.Controls.Add(this.txtMiktarWin);
@@ -809,7 +1136,8 @@ namespace BorsaApplication
             this.dataGridViewTextBoxColumn18,
             this.WinItemName,
             this.dataGridViewTextBoxColumn19,
-            this.dataGridViewTextBoxColumn20});
+            this.dataGridViewTextBoxColumn20,
+            this.wnDateOfPurchase});
             this.dgvWin.Cursor = System.Windows.Forms.Cursors.Default;
             this.dgvWin.GridColor = System.Drawing.SystemColors.AppWorkspace;
             this.dgvWin.Location = new System.Drawing.Point(3, 3);
@@ -821,9 +1149,59 @@ namespace BorsaApplication
             this.dgvWin.Size = new System.Drawing.Size(975, 302);
             this.dgvWin.TabIndex = 37;
             // 
+            // dataGridViewTextBoxColumn17
+            // 
+            this.dataGridViewTextBoxColumn17.DataPropertyName = "UserID";
+            this.dataGridViewTextBoxColumn17.HeaderText = "User ID";
+            this.dataGridViewTextBoxColumn17.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn17.Name = "dataGridViewTextBoxColumn17";
+            this.dataGridViewTextBoxColumn17.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn18
+            // 
+            this.dataGridViewTextBoxColumn18.DataPropertyName = "UserName";
+            this.dataGridViewTextBoxColumn18.HeaderText = "User Name";
+            this.dataGridViewTextBoxColumn18.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn18.Name = "dataGridViewTextBoxColumn18";
+            this.dataGridViewTextBoxColumn18.ReadOnly = true;
+            // 
+            // WinItemName
+            // 
+            this.WinItemName.DataPropertyName = "ItemName";
+            this.WinItemName.HeaderText = "Item Name";
+            this.WinItemName.MinimumWidth = 6;
+            this.WinItemName.Name = "WinItemName";
+            this.WinItemName.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn19
+            // 
+            this.dataGridViewTextBoxColumn19.DataPropertyName = "ItemAmount";
+            this.dataGridViewTextBoxColumn19.HeaderText = "Item Amount";
+            this.dataGridViewTextBoxColumn19.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn19.Name = "dataGridViewTextBoxColumn19";
+            this.dataGridViewTextBoxColumn19.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn20
+            // 
+            this.dataGridViewTextBoxColumn20.DataPropertyName = "ItemPrice";
+            this.dataGridViewTextBoxColumn20.HeaderText = "Item Price";
+            this.dataGridViewTextBoxColumn20.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn20.Name = "dataGridViewTextBoxColumn20";
+            this.dataGridViewTextBoxColumn20.ReadOnly = true;
+            // 
+            // wnDateOfPurchase
+            // 
+            this.wnDateOfPurchase.DataPropertyName = "DateOfPurchase";
+            this.wnDateOfPurchase.HeaderText = "Date";
+            this.wnDateOfPurchase.MinimumWidth = 6;
+            this.wnDateOfPurchase.Name = "wnDateOfPurchase";
+            this.wnDateOfPurchase.ReadOnly = true;
+            // 
             // WolfPage
             // 
             this.WolfPage.BackColor = System.Drawing.Color.BlanchedAlmond;
+            this.WolfPage.Controls.Add(this.txtWolfFiyat);
+            this.WolfPage.Controls.Add(this.label15);
             this.WolfPage.Controls.Add(this.pictureBox9);
             this.WolfPage.Controls.Add(this.lblParaWolf);
             this.WolfPage.Controls.Add(this.txtMiktarWolf);
@@ -898,7 +1276,8 @@ namespace BorsaApplication
             this.dataGridViewTextBoxColumn22,
             this.WolfItemName,
             this.dataGridViewTextBoxColumn23,
-            this.dataGridViewTextBoxColumn24});
+            this.dataGridViewTextBoxColumn24,
+            this.wlfDateOfPurchase});
             this.dgvWolf.Cursor = System.Windows.Forms.Cursors.Default;
             this.dgvWolf.GridColor = System.Drawing.SystemColors.AppWorkspace;
             this.dgvWolf.Location = new System.Drawing.Point(3, 3);
@@ -909,6 +1288,54 @@ namespace BorsaApplication
             this.dgvWolf.RowTemplate.Height = 24;
             this.dgvWolf.Size = new System.Drawing.Size(975, 302);
             this.dgvWolf.TabIndex = 37;
+            // 
+            // dataGridViewTextBoxColumn21
+            // 
+            this.dataGridViewTextBoxColumn21.DataPropertyName = "UserID";
+            this.dataGridViewTextBoxColumn21.HeaderText = "User ID";
+            this.dataGridViewTextBoxColumn21.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn21.Name = "dataGridViewTextBoxColumn21";
+            this.dataGridViewTextBoxColumn21.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn22
+            // 
+            this.dataGridViewTextBoxColumn22.DataPropertyName = "UserName";
+            this.dataGridViewTextBoxColumn22.HeaderText = "User Name";
+            this.dataGridViewTextBoxColumn22.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn22.Name = "dataGridViewTextBoxColumn22";
+            this.dataGridViewTextBoxColumn22.ReadOnly = true;
+            // 
+            // WolfItemName
+            // 
+            this.WolfItemName.DataPropertyName = "ItemName";
+            this.WolfItemName.HeaderText = "Item Name";
+            this.WolfItemName.MinimumWidth = 6;
+            this.WolfItemName.Name = "WolfItemName";
+            this.WolfItemName.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn23
+            // 
+            this.dataGridViewTextBoxColumn23.DataPropertyName = "ItemAmount";
+            this.dataGridViewTextBoxColumn23.HeaderText = "Item Amount";
+            this.dataGridViewTextBoxColumn23.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn23.Name = "dataGridViewTextBoxColumn23";
+            this.dataGridViewTextBoxColumn23.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn24
+            // 
+            this.dataGridViewTextBoxColumn24.DataPropertyName = "ItemPrice";
+            this.dataGridViewTextBoxColumn24.HeaderText = "Item Price";
+            this.dataGridViewTextBoxColumn24.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn24.Name = "dataGridViewTextBoxColumn24";
+            this.dataGridViewTextBoxColumn24.ReadOnly = true;
+            // 
+            // wlfDateOfPurchase
+            // 
+            this.wlfDateOfPurchase.DataPropertyName = "DateOfPurchase";
+            this.wlfDateOfPurchase.HeaderText = "Date";
+            this.wlfDateOfPurchase.MinimumWidth = 6;
+            this.wlfDateOfPurchase.Name = "wlfDateOfPurchase";
+            this.wlfDateOfPurchase.ReadOnly = true;
             // 
             // Anapage
             // 
@@ -1027,321 +1454,133 @@ namespace BorsaApplication
             // 
             this.tblItemsBindingSource.DataMember = "Tbl_Items";
             // 
-            // BatteryUserID
+            // txtBtryFiyat
+            // 
+            this.txtBtryFiyat.Location = new System.Drawing.Point(187, 310);
+            this.txtBtryFiyat.Name = "txtBtryFiyat";
+            this.txtBtryFiyat.Size = new System.Drawing.Size(106, 22);
+            this.txtBtryFiyat.TabIndex = 35;
             // 
-            this.BatteryUserID.DataPropertyName = "UserID";
-            this.BatteryUserID.HeaderText = "User ID";
-            this.BatteryUserID.MinimumWidth = 6;
-            this.BatteryUserID.Name = "BatteryUserID";
-            this.BatteryUserID.ReadOnly = true;
+            // label2
             // 
-            // BatteryUserName
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label2.Location = new System.Drawing.Point(136, 308);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(56, 24);
+            this.label2.TabIndex = 34;
+            this.label2.Text = "Fiyat:";
             // 
-            this.BatteryUserName.DataPropertyName = "UserName";
-            this.BatteryUserName.HeaderText = "User Name";
-            this.BatteryUserName.MinimumWidth = 6;
-            this.BatteryUserName.Name = "BatteryUserName";
-            this.BatteryUserName.ReadOnly = true;
+            // txtBigFiyat
+            // 
+            this.txtBigFiyat.Location = new System.Drawing.Point(187, 310);
+            this.txtBigFiyat.Name = "txtBigFiyat";
+            this.txtBigFiyat.Size = new System.Drawing.Size(106, 22);
+            this.txtBigFiyat.TabIndex = 40;
             // 
-            // BatteryItemName
+            // label3
             // 
-            this.BatteryItemName.DataPropertyName = "ItemName";
-            this.BatteryItemName.HeaderText = "Item Name";
-            this.BatteryItemName.MinimumWidth = 6;
-            this.BatteryItemName.Name = "BatteryItemName";
-            this.BatteryItemName.ReadOnly = true;
-            // 
-            // BatteryItemAmount
-            // 
-            this.BatteryItemAmount.DataPropertyName = "ItemAmount";
-            this.BatteryItemAmount.HeaderText = "Item Amount";
-            this.BatteryItemAmount.MinimumWidth = 6;
-            this.BatteryItemAmount.Name = "BatteryItemAmount";
-            this.BatteryItemAmount.ReadOnly = true;
-            // 
-            // BatteryItemPrice
-            // 
-            this.BatteryItemPrice.DataPropertyName = "ItemPrice";
-            this.BatteryItemPrice.HeaderText = "Item Price";
-            this.BatteryItemPrice.MinimumWidth = 6;
-            this.BatteryItemPrice.Name = "BatteryItemPrice";
-            this.BatteryItemPrice.ReadOnly = true;
-            // 
-            // BigUserID
-            // 
-            this.BigUserID.DataPropertyName = "UserID";
-            this.BigUserID.HeaderText = "User ID";
-            this.BigUserID.MinimumWidth = 6;
-            this.BigUserID.Name = "BigUserID";
-            // 
-            // BigUserName
-            // 
-            this.BigUserName.DataPropertyName = "UserName";
-            this.BigUserName.HeaderText = "User Name";
-            this.BigUserName.MinimumWidth = 6;
-            this.BigUserName.Name = "BigUserName";
-            // 
-            // BigItemName
-            // 
-            this.BigItemName.DataPropertyName = "ItemName";
-            this.BigItemName.HeaderText = "Item Name";
-            this.BigItemName.MinimumWidth = 6;
-            this.BigItemName.Name = "BigItemName";
-            this.BigItemName.ReadOnly = true;
-            // 
-            // BigItemAmount
-            // 
-            this.BigItemAmount.DataPropertyName = "ItemAmount";
-            this.BigItemAmount.HeaderText = "Item Amount";
-            this.BigItemAmount.MinimumWidth = 6;
-            this.BigItemAmount.Name = "BigItemAmount";
-            // 
-            // BigItemPrice
-            // 
-            this.BigItemPrice.DataPropertyName = "ItemPrice";
-            this.BigItemPrice.HeaderText = "ItemPrice";
-            this.BigItemPrice.MinimumWidth = 6;
-            this.BigItemPrice.Name = "BigItemPrice";
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "UserID";
-            this.dataGridViewTextBoxColumn1.HeaderText = "User ID";
-            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "UserName";
-            this.dataGridViewTextBoxColumn2.HeaderText = "User Name";
-            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.ReadOnly = true;
-            // 
-            // PowerItemName
-            // 
-            this.PowerItemName.DataPropertyName = "ItemName";
-            this.PowerItemName.HeaderText = "Item Name";
-            this.PowerItemName.MinimumWidth = 6;
-            this.PowerItemName.Name = "PowerItemName";
-            this.PowerItemName.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "ItemAmount";
-            this.dataGridViewTextBoxColumn3.HeaderText = "Item Amount";
-            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "ItemPrice";
-            this.dataGridViewTextBoxColumn4.HeaderText = "Item Price";
-            this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "UserID";
-            this.dataGridViewTextBoxColumn5.HeaderText = "User ID";
-            this.dataGridViewTextBoxColumn5.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            this.dataGridViewTextBoxColumn5.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            this.dataGridViewTextBoxColumn6.DataPropertyName = "UserName";
-            this.dataGridViewTextBoxColumn6.HeaderText = "User Name";
-            this.dataGridViewTextBoxColumn6.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            this.dataGridViewTextBoxColumn6.ReadOnly = true;
-            // 
-            // RainItemName
-            // 
-            this.RainItemName.DataPropertyName = "ItemName";
-            this.RainItemName.HeaderText = "Item Name";
-            this.RainItemName.MinimumWidth = 6;
-            this.RainItemName.Name = "RainItemName";
-            this.RainItemName.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn7
-            // 
-            this.dataGridViewTextBoxColumn7.DataPropertyName = "ItemAmount";
-            this.dataGridViewTextBoxColumn7.HeaderText = "Item Amount";
-            this.dataGridViewTextBoxColumn7.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            this.dataGridViewTextBoxColumn7.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn8
-            // 
-            this.dataGridViewTextBoxColumn8.DataPropertyName = "ItemPrice";
-            this.dataGridViewTextBoxColumn8.HeaderText = "Item Price";
-            this.dataGridViewTextBoxColumn8.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
-            this.dataGridViewTextBoxColumn8.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn9
-            // 
-            this.dataGridViewTextBoxColumn9.DataPropertyName = "UserID";
-            this.dataGridViewTextBoxColumn9.HeaderText = "User ID";
-            this.dataGridViewTextBoxColumn9.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
-            this.dataGridViewTextBoxColumn9.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn10
-            // 
-            this.dataGridViewTextBoxColumn10.DataPropertyName = "UserName";
-            this.dataGridViewTextBoxColumn10.HeaderText = "User Name";
-            this.dataGridViewTextBoxColumn10.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
-            this.dataGridViewTextBoxColumn10.ReadOnly = true;
-            // 
-            // RedItemName
-            // 
-            this.RedItemName.DataPropertyName = "ItemName";
-            this.RedItemName.HeaderText = "Item Name";
-            this.RedItemName.MinimumWidth = 6;
-            this.RedItemName.Name = "RedItemName";
-            this.RedItemName.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn11
-            // 
-            this.dataGridViewTextBoxColumn11.DataPropertyName = "ItemAmount";
-            this.dataGridViewTextBoxColumn11.HeaderText = "Item Amount";
-            this.dataGridViewTextBoxColumn11.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
-            this.dataGridViewTextBoxColumn11.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn12
-            // 
-            this.dataGridViewTextBoxColumn12.DataPropertyName = "ItemPrice";
-            this.dataGridViewTextBoxColumn12.HeaderText = "Item Price";
-            this.dataGridViewTextBoxColumn12.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
-            this.dataGridViewTextBoxColumn12.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn13
-            // 
-            this.dataGridViewTextBoxColumn13.DataPropertyName = "UserID";
-            this.dataGridViewTextBoxColumn13.HeaderText = "User ID";
-            this.dataGridViewTextBoxColumn13.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
-            this.dataGridViewTextBoxColumn13.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn14
-            // 
-            this.dataGridViewTextBoxColumn14.DataPropertyName = "UserName";
-            this.dataGridViewTextBoxColumn14.HeaderText = "User Name";
-            this.dataGridViewTextBoxColumn14.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn14.Name = "dataGridViewTextBoxColumn14";
-            this.dataGridViewTextBoxColumn14.ReadOnly = true;
-            // 
-            // SpeedItemName
-            // 
-            this.SpeedItemName.DataPropertyName = "ItemName";
-            this.SpeedItemName.HeaderText = "Item Name";
-            this.SpeedItemName.MinimumWidth = 6;
-            this.SpeedItemName.Name = "SpeedItemName";
-            this.SpeedItemName.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn15
-            // 
-            this.dataGridViewTextBoxColumn15.DataPropertyName = "ItemAmount";
-            this.dataGridViewTextBoxColumn15.HeaderText = "Item Amount";
-            this.dataGridViewTextBoxColumn15.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn15.Name = "dataGridViewTextBoxColumn15";
-            this.dataGridViewTextBoxColumn15.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn16
-            // 
-            this.dataGridViewTextBoxColumn16.DataPropertyName = "ItemPrice";
-            this.dataGridViewTextBoxColumn16.HeaderText = "Item Price";
-            this.dataGridViewTextBoxColumn16.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn16.Name = "dataGridViewTextBoxColumn16";
-            this.dataGridViewTextBoxColumn16.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn17
-            // 
-            this.dataGridViewTextBoxColumn17.DataPropertyName = "UserID";
-            this.dataGridViewTextBoxColumn17.HeaderText = "User ID";
-            this.dataGridViewTextBoxColumn17.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn17.Name = "dataGridViewTextBoxColumn17";
-            this.dataGridViewTextBoxColumn17.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn18
-            // 
-            this.dataGridViewTextBoxColumn18.DataPropertyName = "UserName";
-            this.dataGridViewTextBoxColumn18.HeaderText = "User Name";
-            this.dataGridViewTextBoxColumn18.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn18.Name = "dataGridViewTextBoxColumn18";
-            this.dataGridViewTextBoxColumn18.ReadOnly = true;
-            // 
-            // WinItemName
-            // 
-            this.WinItemName.DataPropertyName = "ItemName";
-            this.WinItemName.HeaderText = "Item Name";
-            this.WinItemName.MinimumWidth = 6;
-            this.WinItemName.Name = "WinItemName";
-            this.WinItemName.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn19
-            // 
-            this.dataGridViewTextBoxColumn19.DataPropertyName = "ItemAmount";
-            this.dataGridViewTextBoxColumn19.HeaderText = "Item Amount";
-            this.dataGridViewTextBoxColumn19.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn19.Name = "dataGridViewTextBoxColumn19";
-            this.dataGridViewTextBoxColumn19.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn20
-            // 
-            this.dataGridViewTextBoxColumn20.DataPropertyName = "ItemPrice";
-            this.dataGridViewTextBoxColumn20.HeaderText = "Item Price";
-            this.dataGridViewTextBoxColumn20.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn20.Name = "dataGridViewTextBoxColumn20";
-            this.dataGridViewTextBoxColumn20.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn21
-            // 
-            this.dataGridViewTextBoxColumn21.DataPropertyName = "UserID";
-            this.dataGridViewTextBoxColumn21.HeaderText = "User ID";
-            this.dataGridViewTextBoxColumn21.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn21.Name = "dataGridViewTextBoxColumn21";
-            this.dataGridViewTextBoxColumn21.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn22
-            // 
-            this.dataGridViewTextBoxColumn22.DataPropertyName = "UserName";
-            this.dataGridViewTextBoxColumn22.HeaderText = "User Name";
-            this.dataGridViewTextBoxColumn22.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn22.Name = "dataGridViewTextBoxColumn22";
-            this.dataGridViewTextBoxColumn22.ReadOnly = true;
-            // 
-            // WolfItemName
-            // 
-            this.WolfItemName.DataPropertyName = "ItemName";
-            this.WolfItemName.HeaderText = "Item Name";
-            this.WolfItemName.MinimumWidth = 6;
-            this.WolfItemName.Name = "WolfItemName";
-            this.WolfItemName.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn23
-            // 
-            this.dataGridViewTextBoxColumn23.DataPropertyName = "ItemAmount";
-            this.dataGridViewTextBoxColumn23.HeaderText = "Item Amount";
-            this.dataGridViewTextBoxColumn23.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn23.Name = "dataGridViewTextBoxColumn23";
-            this.dataGridViewTextBoxColumn23.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn24
-            // 
-            this.dataGridViewTextBoxColumn24.DataPropertyName = "ItemPrice";
-            this.dataGridViewTextBoxColumn24.HeaderText = "Item Price";
-            this.dataGridViewTextBoxColumn24.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn24.Name = "dataGridViewTextBoxColumn24";
-            this.dataGridViewTextBoxColumn24.ReadOnly = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label3.Location = new System.Drawing.Point(136, 308);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(56, 24);
+            this.label3.TabIndex = 39;
+            this.label3.Text = "Fiyat:";
+            // 
+            // txtPwrFiyat
+            // 
+            this.txtPwrFiyat.Location = new System.Drawing.Point(187, 310);
+            this.txtPwrFiyat.Name = "txtPwrFiyat";
+            this.txtPwrFiyat.Size = new System.Drawing.Size(106, 22);
+            this.txtPwrFiyat.TabIndex = 43;
+            // 
+            // label5
+            // 
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label5.Location = new System.Drawing.Point(136, 308);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(56, 24);
+            this.label5.TabIndex = 42;
+            this.label5.Text = "Fiyat:";
+            // 
+            // txtRainFiyat
+            // 
+            this.txtRainFiyat.Location = new System.Drawing.Point(187, 310);
+            this.txtRainFiyat.Name = "txtRainFiyat";
+            this.txtRainFiyat.Size = new System.Drawing.Size(106, 22);
+            this.txtRainFiyat.TabIndex = 44;
+            // 
+            // label7
+            // 
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label7.Location = new System.Drawing.Point(136, 308);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(56, 24);
+            this.label7.TabIndex = 43;
+            this.label7.Text = "Fiyat:";
+            // 
+            // txtRedFiyat
+            // 
+            this.txtRedFiyat.Location = new System.Drawing.Point(187, 310);
+            this.txtRedFiyat.Name = "txtRedFiyat";
+            this.txtRedFiyat.Size = new System.Drawing.Size(106, 22);
+            this.txtRedFiyat.TabIndex = 44;
+            // 
+            // label9
+            // 
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label9.Location = new System.Drawing.Point(136, 308);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(56, 24);
+            this.label9.TabIndex = 43;
+            this.label9.Text = "Fiyat:";
+            // 
+            // txtSpdFiyat
+            // 
+            this.txtSpdFiyat.Location = new System.Drawing.Point(187, 310);
+            this.txtSpdFiyat.Name = "txtSpdFiyat";
+            this.txtSpdFiyat.Size = new System.Drawing.Size(106, 22);
+            this.txtSpdFiyat.TabIndex = 44;
+            // 
+            // label11
+            // 
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label11.Location = new System.Drawing.Point(136, 308);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(56, 24);
+            this.label11.TabIndex = 43;
+            this.label11.Text = "Fiyat:";
+            // 
+            // txtWinFiyat
+            // 
+            this.txtWinFiyat.Location = new System.Drawing.Point(187, 310);
+            this.txtWinFiyat.Name = "txtWinFiyat";
+            this.txtWinFiyat.Size = new System.Drawing.Size(106, 22);
+            this.txtWinFiyat.TabIndex = 44;
+            // 
+            // label13
+            // 
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label13.Location = new System.Drawing.Point(136, 308);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(56, 24);
+            this.label13.TabIndex = 43;
+            this.label13.Text = "Fiyat:";
+            // 
+            // txtWolfFiyat
+            // 
+            this.txtWolfFiyat.Location = new System.Drawing.Point(187, 310);
+            this.txtWolfFiyat.Name = "txtWolfFiyat";
+            this.txtWolfFiyat.Size = new System.Drawing.Size(106, 22);
+            this.txtWolfFiyat.TabIndex = 44;
+            // 
+            // label15
+            // 
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label15.Location = new System.Drawing.Point(136, 308);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(56, 24);
+            this.label15.TabIndex = 43;
+            this.label15.Text = "Fiyat:";
             // 
             // AnaEkran
             // 
@@ -1474,40 +1713,64 @@ namespace BorsaApplication
         private System.Windows.Forms.DataGridViewTextBoxColumn BatteryItemName;
         private System.Windows.Forms.DataGridViewTextBoxColumn BatteryItemAmount;
         private System.Windows.Forms.DataGridViewTextBoxColumn BatteryItemPrice;
+        private System.Windows.Forms.DataGridViewTextBoxColumn BtryDateOfPurchase;
         private System.Windows.Forms.DataGridViewTextBoxColumn BigUserID;
         private System.Windows.Forms.DataGridViewTextBoxColumn BigUserName;
         private System.Windows.Forms.DataGridViewTextBoxColumn BigItemName;
         private System.Windows.Forms.DataGridViewTextBoxColumn BigItemAmount;
         private System.Windows.Forms.DataGridViewTextBoxColumn BigItemPrice;
+        private System.Windows.Forms.DataGridViewTextBoxColumn bgDateOfPurchase;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn PowerItemName;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn pwrDateOfPurchase;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
         private System.Windows.Forms.DataGridViewTextBoxColumn RainItemName;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
+        private System.Windows.Forms.DataGridViewTextBoxColumn RnDateOfPurchase;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
         private System.Windows.Forms.DataGridViewTextBoxColumn RedItemName;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn12;
+        private System.Windows.Forms.DataGridViewTextBoxColumn rdDateOfPurchase;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn13;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn14;
         private System.Windows.Forms.DataGridViewTextBoxColumn SpeedItemName;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn15;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn16;
+        private System.Windows.Forms.DataGridViewTextBoxColumn spdDateOfPurchase;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn17;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn18;
         private System.Windows.Forms.DataGridViewTextBoxColumn WinItemName;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn19;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn20;
+        private System.Windows.Forms.DataGridViewTextBoxColumn wnDateOfPurchase;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn21;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn22;
         private System.Windows.Forms.DataGridViewTextBoxColumn WolfItemName;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn23;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn24;
+        private System.Windows.Forms.DataGridViewTextBoxColumn wlfDateOfPurchase;
+        private System.Windows.Forms.TextBox txtBtryFiyat;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txtBigFiyat;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txtPwrFiyat;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox txtRainFiyat;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox txtRedFiyat;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox txtSpdFiyat;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.TextBox txtWinFiyat;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.TextBox txtWolfFiyat;
+        private System.Windows.Forms.Label label15;
     }
 }
