@@ -14,10 +14,10 @@ namespace BorsaApplication
 {
     public partial class ParaEkle : MetroFramework.Forms.MetroForm
     {
-        string userid1;
+        string kullaniciAdi;
         public ParaEkle(string userid)
         {
-            userid1 = userid;
+            kullaniciAdi = userid;
             InitializeComponent();
         }
 
@@ -35,7 +35,7 @@ namespace BorsaApplication
             {
                 itemid = Convert.ToInt32(dataReader["MoneyID"]);
             }
-            SqlCommand komut =new SqlCommand("Execute ParaEkleme "+"'"+userid1+"'"+","+para.ToString().Replace(',','.')+","+itemid, baglanti.baglanti());
+            SqlCommand komut =new SqlCommand("Execute ParaEkleme "+"'"+ kullaniciAdi + "'"+","+para.ToString().Replace(',','.')+","+itemid, baglanti.baglanti());
             komut.ExecuteNonQuery();
             MessageBox.Show("Onay için bekleniyor");  //Para Ekleme procedure ile admin sayfasına istenilen para gonderiliyor.
             baglanti.baglanti().Close();

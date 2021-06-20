@@ -212,10 +212,10 @@ namespace BorsaApplication
             this.mtabCoin.FontSize = MetroFramework.MetroTabControlSize.Tall;
             this.mtabCoin.FontWeight = MetroFramework.MetroTabControlWeight.Regular;
             this.mtabCoin.Location = new System.Drawing.Point(0, 23);
-            this.mtabCoin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.mtabCoin.Margin = new System.Windows.Forms.Padding(2);
             this.mtabCoin.Multiline = true;
             this.mtabCoin.Name = "mtabCoin";
-            this.mtabCoin.SelectedIndex = 6;
+            this.mtabCoin.SelectedIndex = 0;
             this.mtabCoin.Size = new System.Drawing.Size(742, 434);
             this.mtabCoin.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.mtabCoin.TabIndex = 0;
@@ -234,7 +234,7 @@ namespace BorsaApplication
             this.BatteryPage.Controls.Add(this.btnAlımBattery);
             this.BatteryPage.Controls.Add(this.dgvBattery);
             this.BatteryPage.Location = new System.Drawing.Point(4, 84);
-            this.BatteryPage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BatteryPage.Margin = new System.Windows.Forms.Padding(2);
             this.BatteryPage.Name = "BatteryPage";
             this.BatteryPage.Size = new System.Drawing.Size(734, 346);
             this.BatteryPage.TabIndex = 0;
@@ -245,7 +245,7 @@ namespace BorsaApplication
             // txtBtryFiyat
             // 
             this.txtBtryFiyat.Location = new System.Drawing.Point(140, 252);
-            this.txtBtryFiyat.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtBtryFiyat.Margin = new System.Windows.Forms.Padding(2);
             this.txtBtryFiyat.Name = "txtBtryFiyat";
             this.txtBtryFiyat.Size = new System.Drawing.Size(80, 20);
             this.txtBtryFiyat.TabIndex = 35;
@@ -264,7 +264,7 @@ namespace BorsaApplication
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(360, 310);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(19, 27);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -286,7 +286,7 @@ namespace BorsaApplication
             // txtMiktarBattery
             // 
             this.txtMiktarBattery.Location = new System.Drawing.Point(140, 284);
-            this.txtMiktarBattery.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtMiktarBattery.Margin = new System.Windows.Forms.Padding(2);
             this.txtMiktarBattery.Multiline = true;
             this.txtMiktarBattery.Name = "txtMiktarBattery";
             this.txtMiktarBattery.Size = new System.Drawing.Size(80, 20);
@@ -307,7 +307,7 @@ namespace BorsaApplication
             this.btnAlımBattery.BackColor = System.Drawing.Color.Lime;
             this.btnAlımBattery.Font = new System.Drawing.Font("Modern No. 20", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAlımBattery.Location = new System.Drawing.Point(140, 319);
-            this.btnAlımBattery.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAlımBattery.Margin = new System.Windows.Forms.Padding(2);
             this.btnAlımBattery.Name = "btnAlımBattery";
             this.btnAlımBattery.Size = new System.Drawing.Size(80, 22);
             this.btnAlımBattery.TabIndex = 29;
@@ -331,7 +331,7 @@ namespace BorsaApplication
             this.dgvBattery.Cursor = System.Windows.Forms.Cursors.Default;
             this.dgvBattery.GridColor = System.Drawing.SystemColors.AppWorkspace;
             this.dgvBattery.Location = new System.Drawing.Point(2, 2);
-            this.dgvBattery.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvBattery.Margin = new System.Windows.Forms.Padding(2);
             this.dgvBattery.Name = "dgvBattery";
             this.dgvBattery.ReadOnly = true;
             this.dgvBattery.RowHeadersVisible = false;
@@ -400,7 +400,7 @@ namespace BorsaApplication
             this.BigPage.Controls.Add(this.btnAlımBig);
             this.BigPage.Controls.Add(this.dgvBig);
             this.BigPage.Location = new System.Drawing.Point(4, 84);
-            this.BigPage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BigPage.Margin = new System.Windows.Forms.Padding(2);
             this.BigPage.Name = "BigPage";
             this.BigPage.Size = new System.Drawing.Size(734, 346);
             this.BigPage.TabIndex = 1;
@@ -411,7 +411,7 @@ namespace BorsaApplication
             // txtBigFiyat
             // 
             this.txtBigFiyat.Location = new System.Drawing.Point(140, 252);
-            this.txtBigFiyat.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtBigFiyat.Margin = new System.Windows.Forms.Padding(2);
             this.txtBigFiyat.Name = "txtBigFiyat";
             this.txtBigFiyat.Size = new System.Drawing.Size(80, 20);
             this.txtBigFiyat.TabIndex = 40;
@@ -430,7 +430,7 @@ namespace BorsaApplication
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.Location = new System.Drawing.Point(360, 310);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(20, 27);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -452,7 +452,7 @@ namespace BorsaApplication
             // txtMiktarBig
             // 
             this.txtMiktarBig.Location = new System.Drawing.Point(140, 284);
-            this.txtMiktarBig.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtMiktarBig.Margin = new System.Windows.Forms.Padding(2);
             this.txtMiktarBig.Multiline = true;
             this.txtMiktarBig.Name = "txtMiktarBig";
             this.txtMiktarBig.Size = new System.Drawing.Size(80, 20);
@@ -473,7 +473,7 @@ namespace BorsaApplication
             this.btnAlımBig.BackColor = System.Drawing.Color.Lime;
             this.btnAlımBig.Font = new System.Drawing.Font("Modern No. 20", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAlımBig.Location = new System.Drawing.Point(140, 319);
-            this.btnAlımBig.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAlımBig.Margin = new System.Windows.Forms.Padding(2);
             this.btnAlımBig.Name = "btnAlımBig";
             this.btnAlımBig.Size = new System.Drawing.Size(80, 22);
             this.btnAlımBig.TabIndex = 34;
@@ -497,7 +497,7 @@ namespace BorsaApplication
             this.dgvBig.Cursor = System.Windows.Forms.Cursors.Default;
             this.dgvBig.GridColor = System.Drawing.SystemColors.AppWorkspace;
             this.dgvBig.Location = new System.Drawing.Point(2, 2);
-            this.dgvBig.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvBig.Margin = new System.Windows.Forms.Padding(2);
             this.dgvBig.Name = "dgvBig";
             this.dgvBig.RowHeadersVisible = false;
             this.dgvBig.RowHeadersWidth = 51;
@@ -560,7 +560,7 @@ namespace BorsaApplication
             this.PowerPage.Controls.Add(this.btnAlımPower);
             this.PowerPage.Controls.Add(this.dgvPower);
             this.PowerPage.Location = new System.Drawing.Point(4, 84);
-            this.PowerPage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.PowerPage.Margin = new System.Windows.Forms.Padding(2);
             this.PowerPage.Name = "PowerPage";
             this.PowerPage.Size = new System.Drawing.Size(734, 346);
             this.PowerPage.TabIndex = 2;
@@ -570,7 +570,7 @@ namespace BorsaApplication
             // txtPwrFiyat
             // 
             this.txtPwrFiyat.Location = new System.Drawing.Point(140, 252);
-            this.txtPwrFiyat.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtPwrFiyat.Margin = new System.Windows.Forms.Padding(2);
             this.txtPwrFiyat.Name = "txtPwrFiyat";
             this.txtPwrFiyat.Size = new System.Drawing.Size(80, 20);
             this.txtPwrFiyat.TabIndex = 43;
@@ -589,7 +589,7 @@ namespace BorsaApplication
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
             this.pictureBox4.Location = new System.Drawing.Point(360, 310);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(20, 27);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -611,7 +611,7 @@ namespace BorsaApplication
             // txtMiktarPower
             // 
             this.txtMiktarPower.Location = new System.Drawing.Point(140, 284);
-            this.txtMiktarPower.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtMiktarPower.Margin = new System.Windows.Forms.Padding(2);
             this.txtMiktarPower.Multiline = true;
             this.txtMiktarPower.Name = "txtMiktarPower";
             this.txtMiktarPower.Size = new System.Drawing.Size(80, 20);
@@ -632,7 +632,7 @@ namespace BorsaApplication
             this.btnAlımPower.BackColor = System.Drawing.Color.Lime;
             this.btnAlımPower.Font = new System.Drawing.Font("Modern No. 20", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAlımPower.Location = new System.Drawing.Point(140, 319);
-            this.btnAlımPower.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAlımPower.Margin = new System.Windows.Forms.Padding(2);
             this.btnAlımPower.Name = "btnAlımPower";
             this.btnAlımPower.Size = new System.Drawing.Size(80, 22);
             this.btnAlımPower.TabIndex = 37;
@@ -656,7 +656,7 @@ namespace BorsaApplication
             this.dgvPower.Cursor = System.Windows.Forms.Cursors.Default;
             this.dgvPower.GridColor = System.Drawing.SystemColors.AppWorkspace;
             this.dgvPower.Location = new System.Drawing.Point(2, 2);
-            this.dgvPower.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvPower.Margin = new System.Windows.Forms.Padding(2);
             this.dgvPower.Name = "dgvPower";
             this.dgvPower.ReadOnly = true;
             this.dgvPower.RowHeadersVisible = false;
@@ -725,7 +725,7 @@ namespace BorsaApplication
             this.RainPage.Controls.Add(this.btnAlımRain);
             this.RainPage.Controls.Add(this.dgvRain);
             this.RainPage.Location = new System.Drawing.Point(4, 84);
-            this.RainPage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.RainPage.Margin = new System.Windows.Forms.Padding(2);
             this.RainPage.Name = "RainPage";
             this.RainPage.Size = new System.Drawing.Size(734, 346);
             this.RainPage.TabIndex = 3;
@@ -735,7 +735,7 @@ namespace BorsaApplication
             // txtRainFiyat
             // 
             this.txtRainFiyat.Location = new System.Drawing.Point(140, 252);
-            this.txtRainFiyat.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtRainFiyat.Margin = new System.Windows.Forms.Padding(2);
             this.txtRainFiyat.Name = "txtRainFiyat";
             this.txtRainFiyat.Size = new System.Drawing.Size(80, 20);
             this.txtRainFiyat.TabIndex = 44;
@@ -754,7 +754,7 @@ namespace BorsaApplication
             // 
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
             this.pictureBox5.Location = new System.Drawing.Point(360, 310);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(20, 27);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -776,7 +776,7 @@ namespace BorsaApplication
             // txtMiktarRain
             // 
             this.txtMiktarRain.Location = new System.Drawing.Point(140, 284);
-            this.txtMiktarRain.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtMiktarRain.Margin = new System.Windows.Forms.Padding(2);
             this.txtMiktarRain.Multiline = true;
             this.txtMiktarRain.Name = "txtMiktarRain";
             this.txtMiktarRain.Size = new System.Drawing.Size(80, 20);
@@ -797,7 +797,7 @@ namespace BorsaApplication
             this.btnAlımRain.BackColor = System.Drawing.Color.Lime;
             this.btnAlımRain.Font = new System.Drawing.Font("Modern No. 20", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAlımRain.Location = new System.Drawing.Point(140, 319);
-            this.btnAlımRain.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAlımRain.Margin = new System.Windows.Forms.Padding(2);
             this.btnAlımRain.Name = "btnAlımRain";
             this.btnAlımRain.Size = new System.Drawing.Size(80, 22);
             this.btnAlımRain.TabIndex = 38;
@@ -821,7 +821,7 @@ namespace BorsaApplication
             this.dgvRain.Cursor = System.Windows.Forms.Cursors.Default;
             this.dgvRain.GridColor = System.Drawing.SystemColors.AppWorkspace;
             this.dgvRain.Location = new System.Drawing.Point(2, 2);
-            this.dgvRain.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvRain.Margin = new System.Windows.Forms.Padding(2);
             this.dgvRain.Name = "dgvRain";
             this.dgvRain.ReadOnly = true;
             this.dgvRain.RowHeadersVisible = false;
@@ -890,7 +890,7 @@ namespace BorsaApplication
             this.RedPage.Controls.Add(this.btnAlımRed);
             this.RedPage.Controls.Add(this.dgvRed);
             this.RedPage.Location = new System.Drawing.Point(4, 84);
-            this.RedPage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.RedPage.Margin = new System.Windows.Forms.Padding(2);
             this.RedPage.Name = "RedPage";
             this.RedPage.Size = new System.Drawing.Size(734, 346);
             this.RedPage.TabIndex = 4;
@@ -900,7 +900,7 @@ namespace BorsaApplication
             // txtRedFiyat
             // 
             this.txtRedFiyat.Location = new System.Drawing.Point(140, 252);
-            this.txtRedFiyat.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtRedFiyat.Margin = new System.Windows.Forms.Padding(2);
             this.txtRedFiyat.Name = "txtRedFiyat";
             this.txtRedFiyat.Size = new System.Drawing.Size(80, 20);
             this.txtRedFiyat.TabIndex = 44;
@@ -919,7 +919,7 @@ namespace BorsaApplication
             // 
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
             this.pictureBox6.Location = new System.Drawing.Point(360, 310);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(20, 27);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -941,7 +941,7 @@ namespace BorsaApplication
             // txtMiktarRed
             // 
             this.txtMiktarRed.Location = new System.Drawing.Point(140, 284);
-            this.txtMiktarRed.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtMiktarRed.Margin = new System.Windows.Forms.Padding(2);
             this.txtMiktarRed.Multiline = true;
             this.txtMiktarRed.Name = "txtMiktarRed";
             this.txtMiktarRed.Size = new System.Drawing.Size(80, 20);
@@ -962,7 +962,7 @@ namespace BorsaApplication
             this.btnAlımRed.BackColor = System.Drawing.Color.Lime;
             this.btnAlımRed.Font = new System.Drawing.Font("Modern No. 20", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAlımRed.Location = new System.Drawing.Point(140, 319);
-            this.btnAlımRed.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAlımRed.Margin = new System.Windows.Forms.Padding(2);
             this.btnAlımRed.Name = "btnAlımRed";
             this.btnAlımRed.Size = new System.Drawing.Size(80, 22);
             this.btnAlımRed.TabIndex = 38;
@@ -986,7 +986,7 @@ namespace BorsaApplication
             this.dgvRed.Cursor = System.Windows.Forms.Cursors.Default;
             this.dgvRed.GridColor = System.Drawing.SystemColors.AppWorkspace;
             this.dgvRed.Location = new System.Drawing.Point(2, 2);
-            this.dgvRed.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvRed.Margin = new System.Windows.Forms.Padding(2);
             this.dgvRed.Name = "dgvRed";
             this.dgvRed.ReadOnly = true;
             this.dgvRed.RowHeadersVisible = false;
@@ -1055,7 +1055,7 @@ namespace BorsaApplication
             this.SpeedPage.Controls.Add(this.btnAlımSpeed);
             this.SpeedPage.Controls.Add(this.dgvSpeed);
             this.SpeedPage.Location = new System.Drawing.Point(4, 84);
-            this.SpeedPage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.SpeedPage.Margin = new System.Windows.Forms.Padding(2);
             this.SpeedPage.Name = "SpeedPage";
             this.SpeedPage.Size = new System.Drawing.Size(734, 346);
             this.SpeedPage.TabIndex = 5;
@@ -1065,7 +1065,7 @@ namespace BorsaApplication
             // txtSpdFiyat
             // 
             this.txtSpdFiyat.Location = new System.Drawing.Point(140, 252);
-            this.txtSpdFiyat.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtSpdFiyat.Margin = new System.Windows.Forms.Padding(2);
             this.txtSpdFiyat.Name = "txtSpdFiyat";
             this.txtSpdFiyat.Size = new System.Drawing.Size(80, 20);
             this.txtSpdFiyat.TabIndex = 44;
@@ -1084,7 +1084,7 @@ namespace BorsaApplication
             // 
             this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
             this.pictureBox7.Location = new System.Drawing.Point(360, 310);
-            this.pictureBox7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(20, 27);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1106,7 +1106,7 @@ namespace BorsaApplication
             // txtMiktarSpeed
             // 
             this.txtMiktarSpeed.Location = new System.Drawing.Point(140, 284);
-            this.txtMiktarSpeed.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtMiktarSpeed.Margin = new System.Windows.Forms.Padding(2);
             this.txtMiktarSpeed.Multiline = true;
             this.txtMiktarSpeed.Name = "txtMiktarSpeed";
             this.txtMiktarSpeed.Size = new System.Drawing.Size(80, 20);
@@ -1127,7 +1127,7 @@ namespace BorsaApplication
             this.btnAlımSpeed.BackColor = System.Drawing.Color.Lime;
             this.btnAlımSpeed.Font = new System.Drawing.Font("Modern No. 20", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAlımSpeed.Location = new System.Drawing.Point(140, 319);
-            this.btnAlımSpeed.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAlımSpeed.Margin = new System.Windows.Forms.Padding(2);
             this.btnAlımSpeed.Name = "btnAlımSpeed";
             this.btnAlımSpeed.Size = new System.Drawing.Size(80, 22);
             this.btnAlımSpeed.TabIndex = 38;
@@ -1151,7 +1151,7 @@ namespace BorsaApplication
             this.dgvSpeed.Cursor = System.Windows.Forms.Cursors.Default;
             this.dgvSpeed.GridColor = System.Drawing.SystemColors.AppWorkspace;
             this.dgvSpeed.Location = new System.Drawing.Point(2, 2);
-            this.dgvSpeed.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvSpeed.Margin = new System.Windows.Forms.Padding(2);
             this.dgvSpeed.Name = "dgvSpeed";
             this.dgvSpeed.ReadOnly = true;
             this.dgvSpeed.RowHeadersVisible = false;
@@ -1220,7 +1220,7 @@ namespace BorsaApplication
             this.WinPage.Controls.Add(this.btnAlımWin);
             this.WinPage.Controls.Add(this.dgvWin);
             this.WinPage.Location = new System.Drawing.Point(4, 84);
-            this.WinPage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.WinPage.Margin = new System.Windows.Forms.Padding(2);
             this.WinPage.Name = "WinPage";
             this.WinPage.Size = new System.Drawing.Size(734, 346);
             this.WinPage.TabIndex = 6;
@@ -1230,7 +1230,7 @@ namespace BorsaApplication
             // txtWinFiyat
             // 
             this.txtWinFiyat.Location = new System.Drawing.Point(140, 252);
-            this.txtWinFiyat.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtWinFiyat.Margin = new System.Windows.Forms.Padding(2);
             this.txtWinFiyat.Name = "txtWinFiyat";
             this.txtWinFiyat.Size = new System.Drawing.Size(80, 20);
             this.txtWinFiyat.TabIndex = 44;
@@ -1249,7 +1249,7 @@ namespace BorsaApplication
             // 
             this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
             this.pictureBox8.Location = new System.Drawing.Point(360, 310);
-            this.pictureBox8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox8.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(20, 27);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1271,7 +1271,7 @@ namespace BorsaApplication
             // txtMiktarWin
             // 
             this.txtMiktarWin.Location = new System.Drawing.Point(140, 284);
-            this.txtMiktarWin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtMiktarWin.Margin = new System.Windows.Forms.Padding(2);
             this.txtMiktarWin.Multiline = true;
             this.txtMiktarWin.Name = "txtMiktarWin";
             this.txtMiktarWin.Size = new System.Drawing.Size(80, 20);
@@ -1292,7 +1292,7 @@ namespace BorsaApplication
             this.btnAlımWin.BackColor = System.Drawing.Color.Lime;
             this.btnAlımWin.Font = new System.Drawing.Font("Modern No. 20", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAlımWin.Location = new System.Drawing.Point(140, 319);
-            this.btnAlımWin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAlımWin.Margin = new System.Windows.Forms.Padding(2);
             this.btnAlımWin.Name = "btnAlımWin";
             this.btnAlımWin.Size = new System.Drawing.Size(80, 22);
             this.btnAlımWin.TabIndex = 38;
@@ -1316,7 +1316,7 @@ namespace BorsaApplication
             this.dgvWin.Cursor = System.Windows.Forms.Cursors.Default;
             this.dgvWin.GridColor = System.Drawing.SystemColors.AppWorkspace;
             this.dgvWin.Location = new System.Drawing.Point(2, 2);
-            this.dgvWin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvWin.Margin = new System.Windows.Forms.Padding(2);
             this.dgvWin.Name = "dgvWin";
             this.dgvWin.ReadOnly = true;
             this.dgvWin.RowHeadersVisible = false;
@@ -1385,7 +1385,7 @@ namespace BorsaApplication
             this.WolfPage.Controls.Add(this.btnAlımWolf);
             this.WolfPage.Controls.Add(this.dgvWolf);
             this.WolfPage.Location = new System.Drawing.Point(4, 84);
-            this.WolfPage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.WolfPage.Margin = new System.Windows.Forms.Padding(2);
             this.WolfPage.Name = "WolfPage";
             this.WolfPage.Size = new System.Drawing.Size(734, 346);
             this.WolfPage.TabIndex = 7;
@@ -1395,7 +1395,7 @@ namespace BorsaApplication
             // txtWolfFiyat
             // 
             this.txtWolfFiyat.Location = new System.Drawing.Point(140, 252);
-            this.txtWolfFiyat.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtWolfFiyat.Margin = new System.Windows.Forms.Padding(2);
             this.txtWolfFiyat.Name = "txtWolfFiyat";
             this.txtWolfFiyat.Size = new System.Drawing.Size(80, 20);
             this.txtWolfFiyat.TabIndex = 44;
@@ -1414,7 +1414,7 @@ namespace BorsaApplication
             // 
             this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
             this.pictureBox9.Location = new System.Drawing.Point(360, 310);
-            this.pictureBox9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox9.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(20, 27);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1436,7 +1436,7 @@ namespace BorsaApplication
             // txtMiktarWolf
             // 
             this.txtMiktarWolf.Location = new System.Drawing.Point(140, 284);
-            this.txtMiktarWolf.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtMiktarWolf.Margin = new System.Windows.Forms.Padding(2);
             this.txtMiktarWolf.Multiline = true;
             this.txtMiktarWolf.Name = "txtMiktarWolf";
             this.txtMiktarWolf.Size = new System.Drawing.Size(80, 20);
@@ -1457,7 +1457,7 @@ namespace BorsaApplication
             this.btnAlımWolf.BackColor = System.Drawing.Color.Lime;
             this.btnAlımWolf.Font = new System.Drawing.Font("Modern No. 20", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAlımWolf.Location = new System.Drawing.Point(140, 319);
-            this.btnAlımWolf.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAlımWolf.Margin = new System.Windows.Forms.Padding(2);
             this.btnAlımWolf.Name = "btnAlımWolf";
             this.btnAlımWolf.Size = new System.Drawing.Size(80, 22);
             this.btnAlımWolf.TabIndex = 38;
@@ -1481,7 +1481,7 @@ namespace BorsaApplication
             this.dgvWolf.Cursor = System.Windows.Forms.Cursors.Default;
             this.dgvWolf.GridColor = System.Drawing.SystemColors.AppWorkspace;
             this.dgvWolf.Location = new System.Drawing.Point(2, 2);
-            this.dgvWolf.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvWolf.Margin = new System.Windows.Forms.Padding(2);
             this.dgvWolf.Name = "dgvWolf";
             this.dgvWolf.ReadOnly = true;
             this.dgvWolf.RowHeadersVisible = false;
@@ -1552,7 +1552,7 @@ namespace BorsaApplication
             this.Anapage.HorizontalScrollbarHighlightOnWheel = false;
             this.Anapage.HorizontalScrollbarSize = 8;
             this.Anapage.Location = new System.Drawing.Point(4, 84);
-            this.Anapage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Anapage.Margin = new System.Windows.Forms.Padding(2);
             this.Anapage.Name = "Anapage";
             this.Anapage.Size = new System.Drawing.Size(734, 346);
             this.Anapage.TabIndex = 8;
@@ -1571,7 +1571,7 @@ namespace BorsaApplication
             this.btnCuzdan.Font = new System.Drawing.Font("Elephant", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCuzdan.ForeColor = System.Drawing.Color.Gold;
             this.btnCuzdan.Location = new System.Drawing.Point(530, 132);
-            this.btnCuzdan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCuzdan.Margin = new System.Windows.Forms.Padding(2);
             this.btnCuzdan.Name = "btnCuzdan";
             this.btnCuzdan.Size = new System.Drawing.Size(150, 32);
             this.btnCuzdan.TabIndex = 6;
@@ -1583,7 +1583,7 @@ namespace BorsaApplication
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(657, 184);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(23, 31);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1610,7 +1610,7 @@ namespace BorsaApplication
             this.btnCoinEkle.Font = new System.Drawing.Font("Elephant", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCoinEkle.ForeColor = System.Drawing.Color.Gold;
             this.btnCoinEkle.Location = new System.Drawing.Point(530, 20);
-            this.btnCoinEkle.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCoinEkle.Margin = new System.Windows.Forms.Padding(2);
             this.btnCoinEkle.Name = "btnCoinEkle";
             this.btnCoinEkle.Size = new System.Drawing.Size(150, 32);
             this.btnCoinEkle.TabIndex = 3;
@@ -1625,7 +1625,7 @@ namespace BorsaApplication
             this.btnParaEkle.Font = new System.Drawing.Font("Elephant", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnParaEkle.ForeColor = System.Drawing.Color.Gold;
             this.btnParaEkle.Location = new System.Drawing.Point(530, 75);
-            this.btnParaEkle.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnParaEkle.Margin = new System.Windows.Forms.Padding(2);
             this.btnParaEkle.Name = "btnParaEkle";
             this.btnParaEkle.Size = new System.Drawing.Size(150, 32);
             this.btnParaEkle.TabIndex = 2;
@@ -1667,10 +1667,10 @@ namespace BorsaApplication
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(741, 462);
             this.Controls.Add(this.mtabCoin);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.Name = "AnaEkran";
-            this.Padding = new System.Windows.Forms.Padding(15, 49, 15, 16);
+            this.Padding = new System.Windows.Forms.Padding(15, 60, 15, 16);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.AnaEkran_FormClosed);
             this.Load += new System.EventHandler(this.AnaEkran_Load);
             this.mtabCoin.ResumeLayout(false);

@@ -13,10 +13,10 @@ namespace BorsaApplication
 {
     public partial class CoinEkle : MetroFramework.Forms.MetroForm
     {
-        string userid1;
+        string kullaniciAdi;
         public CoinEkle(string userid)
         {
-            userid1 = userid;
+            kullaniciAdi = userid;
             InitializeComponent();
         }
 
@@ -34,7 +34,7 @@ namespace BorsaApplication
                 itemid = Convert.ToInt32(dataReader["ItemID"]);
                 itemName = dataReader["ItemName"].ToString();
             }
-            SqlCommand komut = new SqlCommand("Execute ItemEkleme "+"'"+userid1+"'"+","+itemid+","+"'"+itemName+"'"+","+txtCoinMiktar.Text+","+txtFiyat.Text, baglanti.baglanti());
+            SqlCommand komut = new SqlCommand("Execute ItemEkleme "+"'"+kullaniciAdi+"'"+","+itemid+","+"'"+itemName+"'"+","+txtCoinMiktar.Text+","+txtFiyat.Text, baglanti.baglanti());
             komut.ExecuteNonQuery();                         //ItemEkleme procedure ile admine gonderilmek uzere sisteme coin ekleniyor.
             MessageBox.Show("Onay için bekleniyor");
             baglanti.baglanti().Close();
